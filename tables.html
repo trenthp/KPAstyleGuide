@@ -1,0 +1,250 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPA Style Guide</title>
+    <link rel="stylesheet" href="css/kpastyle.css">
+  </head>
+  <body>
+
+
+<!-- Top Navigation -->
+    
+    <div class="top-bar">
+      <div class="top-bar-title">
+        <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+          <button class="menu-icon dark" type="button" data-toggle></button>
+        </span>
+        <a href="#" class="branding"><img src="img/logo.svg"></a>
+      </div>
+      <div id="responsive-menu">
+        <div class="top-bar-left">
+          <ul class="menu menu-bordered" data-dropdown-menu>
+            <li><a href="index.html" class="active">Patterns</a></li>
+            <li><a href="voice.html">Voice</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- end Top Navigation -->
+
+
+
+    <div class="row"> <!-- Start of Main Body -->
+
+<!-- Side Nav -->
+
+      <div class="medium-3 large-3 columns padding--lv8">
+        <ul class="menu vertical">
+          <li><a href="index.html">Typography</a></li>
+          <li><a href="forms.html">Forms</a></li>
+          <li><a href="navigation.html">Navigation</a></li>
+          <li class="selected"><a href="tables.html">Tables</a></li>
+          <li><a href="containers.html">Containers</a></li>
+        </ul>
+      </div>
+
+<!-- end Side Nav -->
+
+
+
+<!-- Main Content -->
+
+      <div class="medium-9 large-9 columns mainsection">
+        <div class="header">
+          <h1>Tables</h1>
+        </div>
+
+        <ul class="horizontal menu" data-magellan>
+          <li><a href="#basicTable"><h5>Basic Table</h5></a></li>
+        </ul>
+
+
+      <!-- Buttons Sub Section -->
+        <div class="medium-12 columns subsection">
+          <h3 id="basicTable" data-magellan-target="basicTable">Basic Table</h3>
+          
+          <!-- Example -->
+          <div class="margin-bottom--lv4">
+
+            <div class="example">
+
+              <div class="table-scroll">
+                <table class="hover">
+                  <thead>
+                    <tr>
+                      <th>Header</th>
+                      <th>Table Header</th>
+                      <th>Header</th>
+                      <th>Header</th>
+                      <th>Header</th>
+                      <th>Header</th>
+                      <th>Header</th>
+                      <th>Header</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Content</td>
+                      <td style="display:block; width:200px;">Content goes here</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td style="display:block; width:400px;">This is longer Content Goes Here Donec id elit non mi porta</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                    </tr>
+                    <tr>
+                      <td>Content</td>
+                      <td>Content goes here</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>This is longer Content Goes Here Donec id elit non mi porta</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                    </tr>
+                    <tr>
+                      <td>Content</td>
+                      <td>Content goes here</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>This is longer Content Goes Here Donec id elit non mi porta</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+
+            <!-- Code -->
+            <div class="row">
+              <div class="medium-12 columns code">
+                <code class="html">&lt;div class="table-scroll"&gt;
+                <br>
+                &nbsp; &lt;table class="hover"&gt;
+                <br>
+                &nbsp;&nbsp; &lt;thead&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;tr&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;th&gt;Header&lt;/th&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;th&gt;Table Header&lt;/th&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;th&gt;Header&lt;/th&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;th&gt;Header&lt;/th&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;th&gt;Header&lt;/th&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;th&gt;Header&lt;/th&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;th&gt;Header&lt;/th&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;th&gt;Header&lt;/th&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;/tr&gt;
+                <br>
+                &nbsp;&nbsp; &lt;/thead&gt;
+                <br>
+                &nbsp;&nbsp; &lt;tbody&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;tr&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td style="display:block; width:200px;"&gt;Content goes here&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td style="display:block; width:400px;"&gt;This is longer Content Goes Here Donec id elit non mi porta&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;/tr&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;tr&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content goes here&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;This is longer Content Goes Here Donec id elit non mi porta&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;/tr&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;tr&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content goes here&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;This is longer Content Goes Here Donec id elit non mi porta&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;td&gt;Content&lt;/td&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;/tr&gt;
+                <br>
+                &nbsp;&nbsp; &lt;/tbody&gt;
+                <br>
+                &nbsp; &lt;/table&gt;
+                <br>
+                &lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <!-- end Basic Buttons -->
+
+
+
+
+      </div>
+
+
+
+<!-- end Main Content -->
+
+    </div> 
+
+  
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

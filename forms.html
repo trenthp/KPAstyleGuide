@@ -1,0 +1,562 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPA Style Guide</title>
+    <link rel="stylesheet" href="css/kpastyle.css">
+  </head>
+  <body>
+
+
+<!-- Top Navigation -->
+    
+    <div class="top-bar">
+      <div class="top-bar-title">
+        <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+          <button class="menu-icon dark" type="button" data-toggle></button>
+        </span>
+        <a href="#" class="branding"><img src="img/logo.svg"></a>
+      </div>
+      <div id="responsive-menu">
+        <div class="top-bar-left">
+          <ul class="menu menu-bordered" data-dropdown-menu>
+            <li><a href="index.html" class="active">Patterns</a></li>
+            <li><a href="voice.html">Voice</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- end Top Navigation -->
+
+
+
+    <div class="row"> <!-- Start of Main Body -->
+
+<!-- Side Nav -->
+
+      <div class="medium-3 large-3 columns padding--lv8">
+        <ul class="menu vertical">
+          <li><a href="index.html">Typography</a></li>
+          <li class="selected"><a href="forms.html">Forms</a></li>
+          <li><a href="navigation.html">Navigation</a></li>
+          <li><a href="tables.html">Tables</a></li>
+          <li><a href="containers.html">Containers</a></li>
+        </ul>
+      </div>
+
+<!-- end Side Nav -->
+
+
+
+<!-- Main Content -->
+
+      <div class="medium-9 large-9 columns mainsection">
+        <div class="header">
+          <h1>Forms</h1>
+        </div>
+
+        <ul class="horizontal menu" data-magellan>
+          <li><a href="#buttons"><h5>Buttons</h5></a></li>
+          <li><a href="#selects"><h5>Selects</h5></a></li>
+          <li><a href="#textfields"><h5>Text Fields</h5></a></li>
+          <li><a href="#radiocheckboxes"><h5>Radio & Checkboxes</h5></a></li>
+        </ul>
+
+
+      <!-- Buttons Sub Section -->
+        <div class="medium-12 columns subsection">
+          <h3 id="buttons" data-magellan-target="buttons">Buttons</h3>
+          
+          <!-- Example -->
+          <div class="margin-bottom--lv4">
+          <h4>Basic Buttons</h4>
+
+            <div class="example">
+              <!-- Standard Button -->
+              <button type="button" class="button">Standard</button>
+
+              <!-- Primary Button -->
+              <button type="button" class="button primary">Primary Action</button>
+              
+              <!-- Secondary Button -->
+              <button type="button" class="button secondary">Secondary Action</button>
+
+              <!-- Tertiary Button -->
+              <button type="button" class="button tertiary">Tertiary Action</button>
+            </div>
+
+            <!-- Code -->
+            <div class="row">
+              <div class="medium-12 columns code">
+                <code class="html">&lt;button type="button" class="button" href="#"&gt;Standard&lt;/button&gt;
+                <br>
+                &lt;button type="button" class="button primary" href="#"&gt;Primary Action&lt;/button&gt;
+                <br>
+                &lt;button type="button" class="button secondary" href="#"&gt;Secondary Action&lt;/button&gt;
+                <br>
+                &lt;button type="button" class="button tertiary" href="#"&gt;Tertiary Action&lt;/button&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <!-- end Basic Buttons -->
+
+
+
+          <!-- Example -->
+          <div class="margin-bottom--lv4">
+          <h4>Hollow Buttons</h4>
+
+            <div class="example">
+              <!-- Standard Hollow Button -->
+              <button class="button hollow">Standard</button>
+
+              <!-- Primary Hollow Button -->
+              <button class="button primary hollow">Primary Action</button>
+              
+              <!-- Secondary Hollow Button -->
+              <button class="button secondary hollow">Secondary Action</button>
+
+              <!-- Tertiary Hollow Button -->
+              <button class="button tertiary hollow">Tertiary Action</button>
+            </div>  
+
+            <!-- Code -->
+            <div class="row">
+              <div class="medium-12 columns code">
+                <code class="html">&lt;button class="button hollow" href="#"&gt;Standard&lt;/button&gt;
+                <br>
+                &lt;button class="button primary hollow" href="#"&gt;Primary Action&lt;/button&gt;
+                <br>
+                &lt;button class="button secondary hollow" href="#"&gt;Secondary Action&lt;/button&gt;
+                <br>
+                &lt;button class="button tertiary hollow" href="#"&gt;Tertiary Action&lt;/button&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <!-- end Hollow Buttons -->
+
+
+
+          <!-- Example -->
+          <div class="margin-bottom--lv4">
+          <h4>Split Button</h4>
+
+            <div class="example">
+              <!-- Standard Split Button -->
+              <div class="button-group">
+                <a class="button">Primary Action</a>
+                <a class="dropdown button arrow-only">
+                  <span class="show-for-sr">Show menu</span>
+                </a>
+              </div>
+            </div>
+              
+
+            <!-- Code -->
+            <div class="row">
+              <div class="medium-12 columns code">
+                <code class="html">&lt;div class="button-group"&gt;
+                <br>
+                &nbsp; &lt;a class="button"&gt;Primary Action&lt;/a&gt;
+                <br>
+                &nbsp; &lt;a class="dropdown button arrow-only"&gt;
+                <br>
+                &nbsp;&nbsp; &lt;span class="show-for-sr"&gt;Show menu&lt;/span&gt;
+                <br>
+                &nbsp; &lt;/a&gt;
+                <br>
+                &lt;/div&gt;
+                </code>
+              </div>
+            </div>
+          
+          </div>
+          <!-- end Split Buttons -->
+
+        </div>
+      <!-- end Buttons Sub Section -->
+
+
+
+
+      <hr>
+
+
+
+
+      <!-- Selects Sub Section -->
+        <div class="medium-12 columns subsection">
+          <h3 id="selects" data-magellan-target="selects">Selects</h3>
+
+          <!-- Example -->
+          <h4>Dropdown</h4>
+            <div class="example">
+              <!-- Dropdown Button 
+                <div class="margin-bottom--lv2">
+                  <select type="button" class="button">
+                    <option value="">Select an option</option>
+                    <option value="1">option 1</option>
+                    <option value="2">option 2</option>
+                    <option value="3">option 3</option>
+                  </select>
+                </div>-->
+              <!-- Dropdown with Label -->
+              <label>Select Menu with label
+                <select>
+                  <option value="1">option 1</option>
+                  <option value="2">option 2</option>
+                  <option value="3">option 3</option>
+                </select>
+              </label>
+            </div>
+
+            <!-- Code -->
+            <div class="row">
+              <div class="medium-12 columns code">
+                <code class="html">&lt;select type="button" class="button"&gt;
+                <br>
+                  &nbsp; &lt;option value=""&gt;Select an option&lt;/option&gt;
+                <br>
+                  &nbsp; &lt;option value="1"&gt;option 1&lt;/option&gt;
+                <br>
+                  &nbsp; &lt;option value="2"&gt;option 2&lt;/option&gt;
+                <br>
+                  &nbsp; &lt;option value="3"&gt;option 3&lt;/option&gt;
+                <br>
+                &lt;/select&gt;
+                <br>
+                <br>
+                &lt;label&gt;Select Menu with label
+                <br>
+                  &nbsp; &lt;select&gt;
+                <br>
+                  &nbsp;&nbsp; &lt;option value="1"&gt;option 1&lt;/option&gt;
+                <br>
+                  &nbsp;&nbsp; &lt;option value="2"&gt;option 2&lt;/option&gt;
+                <br>
+                  &nbsp;&nbsp; &lt;option value="3"&gt;option 3&lt;/option&gt;
+                <br>
+                &nbsp; &lt;/select&gt;
+                <br>
+                &lt;/label&gt;
+                </code>
+              </div>
+            </div>
+          <!-- end Dropdown -->
+
+        </div>
+      <!-- end Selects Sub Section -->
+
+
+
+
+      <hr>
+
+
+
+
+      <!-- Text Fields Sub Section -->
+        <div class="medium-12 columns subsection">
+          <h3 id="textfields" data-magellan-target="textfields">Text Fields</h3>
+         
+          <!-- Text Fields -->
+          <h4>Text Fields</h4>
+            <div class="example">
+              <!-- Text Field -->
+              <form>
+                <div class="row">
+                  <div class="medium-6 columns">
+                    <label>Input Label
+                      <input type="text" placeholder="">
+                    </label>
+                  </div>
+                  <div class="medium-6 columns">
+                    <label>Input Label
+                      <input type="text" placeholder="placeholder text">
+                    </label>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+
+            <!-- Code -->
+            <div class="row">
+              <div class="medium-12 columns code">
+                <code class="html">&lt;form&gt;
+                <br>
+                  &nbsp; &lt;div class="row"&gt;
+                <br>
+                  &nbsp;&nbsp; &lt;div class="medium-6 columns"&gt;
+                <br>
+                  &nbsp;&nbsp;&nbsp; &lt;label&gt;Input Label
+                <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" placeholder=""&gt;
+                <br>
+                  &nbsp;&nbsp;&nbsp; &lt;/label&gt;
+                 <br>
+                  &nbsp;&nbsp; &lt;/div&gt;
+                <br>
+                  &nbsp;&nbsp; &lt;div class="medium-6 columns"&gt;
+                <br>
+                  &nbsp;&nbsp;&nbsp; &lt;label&gt;Input Label
+                <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" placeholder=""&gt;
+                <br>
+                  &nbsp;&nbsp;&nbsp; &lt;/label&gt;
+                 <br>
+                  &nbsp;&nbsp; &lt;/div&gt;
+                <br>
+                &nbsp; &lt;/div&gt;
+                <br>
+                &lt;/form&gt;
+                </code>
+              </div>
+            </div>
+          <!-- end Text Fields -->
+
+
+          <!-- Text Areas -->
+          <h4>Text Area</h4>
+            <div class="example">
+              <!-- Text Area -->
+              <label>
+                What types of vegetables are the best?
+                <textarea placeholder="None"></textarea>
+              </label>
+
+            </div>
+
+            <!-- Code -->
+            <div class="row">
+              <div class="medium-12 columns code">
+                <code class="html">&lt;label&gt;
+                <br>
+                  &nbsp; What types of vegetables are the best?
+                <br>
+                  &nbsp; &lt;textarea placeholder="None"&gt;&lt;/textarea&gt;
+                <br>
+                  &lt;/textarea&gt;
+                </code>
+              </div>
+            </div>
+          <!-- end Text Area -->
+
+
+          <!-- Field Validation -->
+          <h4>Field Validation</h4>
+            <div class="example">
+              <!-- Validation -->
+              <form data-abide novalidate>
+                <div data-abide-error class="alert callout" style="display: none;">
+                  <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                </div>
+                <div class="row">
+                  <div class="medium-6 columns">
+                    <label>Number Required
+                      <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number">
+                      <span class="form-error">
+                        Yo, you had better fill this out, it's required.
+                      </span>
+                    </label>
+                    <p class="help-text" id="exampleHelpText">Enter any number</p>
+                  </div>
+                  <div class="medium-6 columns">
+                    <label>Select a number
+                      <select id="select" required>
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <fieldset class="small-12 columns">
+                    <button class="button primary" type="submit" value="Submit">Submit</button>
+                    <button class="button" type="reset" value="Reset">Reset</button>
+                  </fieldset>
+                </div>
+              </form>
+
+            </div>
+
+            <!-- Code -->
+            <div class="row">
+              <div class="medium-12 columns code">
+                <code class="html">&lt;form data-abide novalidate&gt;
+                <br>
+                  &nbsp; &lt;div data-abide-error class="alert callout" style="display: none;"&gt;
+                <br>
+                  &nbsp;&nbsp; &lt;p&gt;&lt;i class="fi-alert"&gt;&lt;/i&gt;There are some errors in your form.&lt;/p&gt;
+                <br>
+                &nbsp; &lt;/div&gt;
+                <br>
+                &nbsp; &lt;div class="row"&gt;
+                <br>
+                &nbsp;&nbsp; &lt;div class="medium-6 columns"&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;label&gt;Number Required
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number"&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;span class="form-error"&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yo, you had better fill this out, it's required.
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;/span&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;/label&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;p class="help-text" id="exampleHelpText">Enter any number&lt;/p&gt;
+                <br>
+                &nbsp;&nbsp; &lt;/div&gt;
+                <br>
+                &nbsp;&nbsp; &lt;div class="medium-6 columns"&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;label&gt;Select a number
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;select id="select" required&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="">&lt;/option&gt;
+                <br>    
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="1">1&lt;/option&gt;
+                <br>   
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="2">2&lt;/option&gt;
+                <br>    
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="3">3&lt;/option&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="4">4&lt;/option&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;/select&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;/label&gt;
+                <br>
+                &nbsp;&nbsp; &lt;/div&gt;
+                <br>
+                &nbsp; &lt;/div&gt;
+                <br>
+                &nbsp; &lt;div class="row"&gt;
+                <br>
+                &nbsp;&nbsp; &lt;fieldset class="small-12 columns"&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;button class="button primary" type="submit" value="Submit"&gt;Submit&lt;/button&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp; &lt;button class="button" type="reset" value="Reset"&gt;Reset&lt;/button&gt;
+                <br>
+                &nbsp;&nbsp; &lt;/fieldset&gt;
+                <br>
+                &nbsp; &lt;/div&gt;
+                <br>
+                &lt;/form&gt;
+
+                </code>
+              </div>
+            </div>
+          <!-- end Field Validation -->
+
+
+        </div>
+      <!-- end SText Fields ub Section -->
+
+
+        <hr>
+
+
+      <!-- Sub Section -->
+        <div class="medium-12 columns subsection">
+          <h3 id="radiocheckboxes" data-magellan-target="radiocheckboxes">Radio & Checkboxes</h3>
+
+          <!-- Example -->
+          <h4>Simple Radio & Checkboxes</h4>
+            <div class="example">
+              <!-- Radio Group -->
+              <div class="row margin-bottom--lv3">
+                <fieldset class="medium-12 columns">
+                  <legend>Choose the best fruit</legend>
+                  <input type="radio" name="fruit" value="Pineapple" id="fruitPineapple" required><label for="fruitPineapple">Pineapple</label>
+                  <input type="radio" name="fruit" value="WholePineapple" id="fruitWholePineapple"><label for="fruitWholePineapple">Whole Pineapple</label>
+                </fieldset>
+              </div>
+              <!-- Checkboxes -->
+              <div class="row">
+                <fieldset class="medium-12 columns">
+                  <legend>Which fruit is awesome?</legend>
+                  <input type="checkbox" id="pineappleSlices"><label for="pineappleSlices">Pineapple Slices</label>
+                  <input type="checkbox" id="pineappleChunks"><label for="pineappleChunks">Pineapple Chunks</label>
+                  <input type="checkbox" id="pineappleStrips"><label for="pineappleStrips">Pineapple Strips</label>
+                </fieldset>
+              </div>
+            </div>
+
+            <!-- Code -->
+            <div class="row">
+              <div class="medium-12 columns code">
+                <code class="html">&lt;!-- Radio Group --&gt;
+                <br>
+                &lt;div class="row margin-bottom--lv3"&gt;
+                <br>
+                &nbsp; &lt;fieldset class="medium-12 columns"&gt;
+                <br>
+                &nbsp;&nbsp; &lt;legend&gt;Choose the best fruit&lt;/legend&gt;
+                <br>
+                &nbsp;&nbsp; &lt;input type="radio" name="fruit" value="Pineapple" id="fruitPineapple" required&gt;&lt;label for="fruitPineapple"&gt;Pineapple&lt;/label&gt;
+                <br>
+                &nbsp;&nbsp; &lt;input type="radio" name="fruit" value="WholePineapple" id="fruitWholePineapple"&gt;&lt;label for="fruitWholePineapple"&gt;Whole Pineapple&lt;/label&gt;
+                <br>
+                &nbsp; &lt;/fieldset&gt;
+                <br>
+                &lt;/div&gt;
+                <br>
+                &lt;!-- Checkboxes --&gt;
+                <br>
+                &lt;div class="row"&gt;
+                <br>
+                &nbsp; &lt;fieldset class="medium-12 columns"&gt;
+                <br>
+                &nbsp;&nbsp; &lt;legend&gt;Which fruit is awesome?&lt;/legend&gt;
+                <br>
+                &nbsp;&nbsp; &lt;input type="checkbox" id="pineappleSlices"&gt;&lt;label for="pineappleSlices"&gt;Pineapple Slices&lt;/label&gt;
+                <br>
+                &nbsp;&nbsp; &lt;input type="checkbox" id="pineappleChunks">&lt;label for="pineappleChunks"&gt;Pineapple Chunks&lt;/label&gt;
+                <br>
+                &nbsp;&nbsp; &lt;input type="checkbox" id="pineappleStrips"&gt;&lt;label for="pineappleStrips"&gt;Pineapple Strips&lt;/label&gt;
+                <br>
+                &nbsp; &lt;/fieldset&gt;
+                <br>
+                &lt;/div&gt;
+                </code>
+              </div>
+            </div>
+          <!-- end Dropdown -->
+
+        </div>
+      <!-- end Sub Section --> 
+
+      </div>
+
+
+
+<!-- end Main Content -->
+
+    </div> 
+
+  
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
