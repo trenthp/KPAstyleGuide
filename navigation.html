@@ -73,15 +73,78 @@
           <!-- Example -->
           <div class="example">
 
-            <h4>Coming soon</h4>
+            <ul class="horizontal dropdown menu" data-dropdown-menu>
+              <li><a href="#"><h5>Item 1</h5></a></li>
+              <li>
+                <a href="#"><h5 class="horizontal-parent-selected">Item 2</h5></a>
+                <ul class="menu">
+                  <li><a href="#">Item 1A</a></li>
+                  <li><a href="#" class="horizontal-child-selected">Item 2A</a></li>
+                  <li><a href="#">Item 3A</a></li>
+                </ul>
+                </li>
+              <li><a href="#"><h5>Item 3</h5></a></li>
+              <li>
+                <a href="#"><h5>Item 4</h5></a>
+                <ul class="menu">
+                  <li><a href="#">Item 1A</a></li>
+                  <li><a href="#">Item 2A</a></li>
+                </ul>
+              </li>
+            </ul>
 
+          </div>
+
+          <!-- Notes -->
+          <div class="example">
+            <div class="row">
+                <div class="medium-12 columns">
+                <h4>Notes</h4>
+                <p>Horizontal menus are used for local navigations which fall under the same main navigation.</p>
+              </div>
+            </div>
           </div>
 
           <!-- Code -->
           <div class="row">
             <div class="medium-12 columns code">
-              <code class="html">
-
+              <code class="html">&lt;ul class="horizontal dropdown menu" data-dropdown-menu&gt;
+                <br>  
+               &nbsp; &lt;li&gt;&lt;a href="#"&gt;&lt;h5&gt;Item 1&lt;/h5&gt;&lt;/a&gt;&lt;/li&gt;
+                <br>  
+                &nbsp; &lt;li&gt;
+                <br>  
+                &nbsp;&nbsp; &lt;a href="#"&gt;&lt;h5&gt;Item 2&lt;/h5&gt;&lt;/a&gt;
+                <br>  
+                &nbsp;&nbsp; &lt;ul class="menu"&gt;
+                <br>  
+                &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#"&gt;Item 1A&lt;/a&gt;&lt;/li&gt;
+                <br>  
+                &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#"&gt;Item 2A&lt;/a&gt;&lt;/li&gt;
+                <br>  
+                &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#"&gt;Item 3A&lt;/a&gt;&lt;/li&gt;
+                <br>  
+                &nbsp;&nbsp; &lt;/ul&gt;
+                <br>  
+                &nbsp; &lt;/li&gt;
+                <br>  
+                &nbsp; &lt;li&gt;&lt;a href="#"&gt;&lt;h5&gt;Item 3&lt;/h5&gt;&lt;/a&gt;&lt;/li&gt;
+                <br>  
+                &nbsp; &lt;li&gt;
+                <br>  
+                &nbsp;&nbsp; &lt;a href="#"&gt;&lt;h5&gt;Item 4&lt;/h5&gt;&lt;/a&gt;
+                <br>  
+                &nbsp;&nbsp; &lt;ul class="menu"&gt;
+                <br>  
+                &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#"&gt;Item 1A&lt;/a&gt;&lt;/li&gt;
+                <br>  
+                &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#"&gt;Item 2A&lt;/a&gt;&lt;/li&gt;
+                <br>  
+                &nbsp;&nbsp; &lt;/ul&gt;
+                <br>  
+                &nbsp; &lt;/li&gt;
+                <br>
+                &lt;/ul&gt;
               </code>
             </div>
           </div>
@@ -97,7 +160,12 @@
           <!-- Example -->
           <div class="example">
 
-            <h4>Coming soon</h4>
+            <ul class="vertical menu" style="max-width: 300px;">
+              <li><a href="#">Item 1</a></li>
+              <li class="selected"><a href="#">Item 2</a></li>
+              <li><a href="#">Item 3</a></li>
+              <li><a href="#">Item 4</a></li>
+            </ul>
 
           </div>
 
