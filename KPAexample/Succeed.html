@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://lossfreerx.com/IT/Incidents.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml" style="position: relative; min-height: 100%"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+    <script type="text/javascript" async="" src="Succeed/walkme_b20204e63f0442608dce7d4ce27a81ab_https.js"></script>
+    <script src="Succeed/jquery-2.1.0.min.js" type="text/javascript"></script>
+    <script src="Succeed/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="Succeed/js.axd" type="text/javascript"></script>
+    <script src="Succeed/bootstrap.min.js" type="text/javascript"></script>
+
+    <script src="Succeed/saved_resource" type="text/javascript"></script>
+    <script src="Succeed/js(1).axd" type="text/javascript"></script>
+    <script src="Succeed/js(2).axd" type="text/javascript"></script>
+    <script src="Succeed/js(3).axd" type="text/javascript"></script>
+    <script src="Succeed/WalkMe.ashx" type="text/javascript"></script>
+    
+    
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+
+    <link rel="stylesheet" type="text/css" href="Succeed/css.axd">
+    <link rel="stylesheet" type="text/css" href="Succeed/css(1).axd">
+    <link rel="stylesheet" type="text/css" href="Succeed/css(2).axd">
+    <link rel="stylesheet" type="text/css" href="Succeed/css(3).axd">
+    <link rel="stylesheet" type="text/css" href="Succeed/css(4).axd">
+    <link href="Succeed/css" rel="stylesheet" type="text/css">
+    
+    
+    <script type="text/javascript">
+        var g_dialog;
+        var g_export;
+        var g_format;
+        var g_sites;
+
+        function Setup(dialog, url, format, sites) {
+            g_dialog = dialog;
+            g_export = url;
+            g_format = format;
+            g_sites = sites;
+        }
+
+        function ExportList() {
+            var url = g_export.replace("{0}", g_format).replace("{1}", g_sites);
+            SDownloader.Download(url, false);
+            $(g_dialog).hide();
+        }
+    </script><script async="" src="Succeed/settings.txt" id="mt_script"></script>
+
+
+<link href="Succeed/css(5).axd" rel="stylesheet" type="text/css">
+<link href="Succeed/css(6).axd" rel="stylesheet" type="text/css">
+<link href="Succeed/css(7).axd" rel="stylesheet" type="text/css">
+<link href="Succeed/css(8).axd" rel="stylesheet" type="text/css">
+
+
+
+
+
+<title>
+	Incident Track &gt; Manage &gt; Incidents
+</title><style type="text/css">
+	.zumiPage {  }
+
+</style>
+
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i" rel="stylesheet">
+<link href="css/KPAstyles.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body style="margin-bottom: 92px;" cz-shortcut-listen="true">
+    <form name="aspnetForm" method="post" action="https://lossfreerx.com/IT/Incidents.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="" id="GridHiddenButtonField" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="zumiPage_ViewStateGUID" id="zumiPage_ViewStateGUID" value="420f7da2-c990-44dc-bcd4-7e4ee7e62d9a">
+<input type="hidden" name="zumiPage_ViewStateID" id="zumiPage_ViewStateID" value="0">
+<input type="hidden" name="zumiPage_FirstRequest" id="zumiPage_FirstRequest" value="true">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script src="./Incident Track _ Manage _ Incidents_files/WebResource.axd" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+</div>
+    
+    
+    
+    <div id="ctl00_ctl00_ctl00_content_pnlMainMenu" class="pnlMainMenu" style="padding-top: 4px">
+	
+        <div class="container mainMenuContainer">
+            <a id="ctl00_ctl00_ctl00_content_hlUrl"><img id="ctl00_ctl00_ctl00_content_imgBanner" src="Succeed/img.axd" style="height:67px;width:1200px;border-width:0px;border: solid 1px #666667"></a>
+            <div class="row" style="margin-top: 4px">
+                <div class="col-xs-6" style="margin-top: 4px">
+                    <span id="ctl00_ctl00_ctl00_content_currentSite">Current Site:</span>&nbsp;
+                    <a id="ctl00_ctl00_ctl00_content_hlMain" class="pointer" href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$hlMain&#39;,&#39;&#39;)">Demo Oregon</a>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span id="ctl00_ctl00_ctl00_content_userName">Guest</span>&nbsp;
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a id="ctl00_ctl00_ctl00_content_hlPassword" class="pointer" href="https://lossfreerx.com/Platform/Administration/User.aspx">My Account</a>
+                                <span id="ctl00_ctl00_ctl00_content_industryChange"></span>
+                                <a id="ctl00_ctl00_ctl00_content_hlSignOut" class="pointer" href="https://lossfreerx.com/Logout.aspx?type=1">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    
+    <nav role="navigation" id="ctl00_ctl00_ctl00_content_menuMain" class="SucceedMenu navbar MainMenu">
+	<div class="container mainMenuContainer">
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class=""><a href="https://lossfreerx.com/Platform/Home.aspx" class="">Home</a></li><li class=" dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Applications <b class="caret"></b></a><ul class=" dropdown-menu">
+					<li class=""><a href="https://lossfreerx.com/Audit/ManageAudits.aspx" class="">Audit Track<sup>®</sup></a></li><li class=""><a href="https://lossfreerx.com/BBS/Search.aspx" class="">BBS Track<sup>®</sup></a></li><li class=""><a href="https://lossfreerx.com/COI/ManageCertificates/All.aspx" class="">COI Track<sup>®</sup></a></li><li class=""><a href="https://lossfreerx.com/IT/Incidents.aspx" class="">Incident Track<sup>®</sup></a></li><li class=""><a href="https://lossfreerx.com/JD/Search.aspx" class="">Job Description Track<sup>®</sup></a></li><li class=""><a href="https://lossfreerx.com/SO/Manage.aspx" class="">Safety Observation Track<sup>®</sup></a></li><li class=""><a href="https://lossfreerx.com/SDS/Search.aspx" class="">SDS Track<sup>®</sup></a></li><li class=""><a href="https://lossfreerx.com/TT/Schedule/Online.aspx" class="">Training Track<sup>™</sup></a></li>
+				</ul></li><li class=" dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Resources <b class="caret"></b></a><ul class=" dropdown-menu">
+					<li class=""><a href="https://lossfreerx.com/Platform/Tools/Library.aspx" class="">Risk Management Library<sup>®</sup></a></li><li class=""><a href="https://lossfreerx.com/Platform/Manual/Main.aspx" class="">Risk Management Manual</a></li><li class=""><a target="_blank" href="https://lossfreerx.com/Resources/Handlers/HR.ashx" class="">HR &amp; Benefits Library<sup>™</sup></a></li><li class=""><a href="https://lossfreerx.com/Platform/Tools/Library.aspx?type=MC" class="">My Content</a></li><li class=""><a target="_blank" href="https://myhrsupportcenter.com/users/sign_in" class="">HR Ask the Pro</a></li><li class="divider"></li><li class=""><a href="https://lossfreerx.com/Platform/Tools/RssFeeds.aspx" class="">News</a></li><li class=""><a href="https://lossfreerx.com/Platform/Calendar.aspx" class="">Calendar of Events</a></li><li class=""><a href="https://lossfreerx.com/Platform/Announcements.aspx" class="">Announcements</a></li>
+				</ul></li><li class=""><a href="https://lossfreerx.com/Platform/Tools/Services.aspx" class="">Services</a></li><li class=" dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Administration <b class="caret"></b></a><ul class=" dropdown-menu">
+					<li class=""><a href="https://lossfreerx.com/Platform/Administration/Sites.aspx" class="">Manage Sites</a></li><li class=""><a href="https://lossfreerx.com/Platform/Administration/Users.aspx" class="">Manage Users</a></li><li class=""><a href="https://lossfreerx.com/Platform/Administration/Roles.aspx" class="">Manage Roles</a></li><li class="divider"></li><li class=""><a href="https://lossfreerx.com/Platform/Administration/Departments.aspx" class="">Manage Departments</a></li><li class=""><a href="https://lossfreerx.com/Platform/Administration/Supervisors.aspx" class="">Manage Supervisors</a></li><li class=""><a href="https://lossfreerx.com/Platform/Administration/Employees.aspx" class="">Manage Employees</a></li><li class=""><a href="https://lossfreerx.com/Platform/Administration/Positions.aspx" class="">Manage Positions</a></li><li class=""><a href="https://lossfreerx.com/Platform/Administration/Classifications.aspx" class="">Manage Classifications</a></li><li class="divider"></li><li class=""><a href="https://lossfreerx.com/Platform/Administration/Jobs.aspx" class="">Manage Jobs</a></li><li class="divider"></li><li class=""><a href="https://lossfreerx.com/Platform/Tools/Email.aspx" class="">Email Log</a></li><li class=""><a href="https://lossfreerx.com/Platform/Administration/Contacts.aspx" class="">Additional Contacts</a></li><li class=""><a href="https://lossfreerx.com/Platform/Administration/Settings.aspx" class="">Organization Settings</a></li><li class=""><a href="https://lossfreerx.com/Platform/Administration/CommunicationSettings.aspx" class="">Communication Settings</a></li>
+				</ul></li><li class=" dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Help <b class="caret"></b></a><ul class=" dropdown-menu">
+					<li class=""><a target="_blank" href="https://support.lossfreerx.com/" class="">Support Center</a></li><li class=""><a href="https://lossfreerx.com/Platform/Help/HelpMenu.aspx" class="">Training Center</a></li>
+				</ul></li>
+			</ul><div class="NavigationMenuItem" style="margin-left:35px;float:left;">
+				<button id="ctl00_ctl00_ctl00_content_menuMain_ctl00" name="ctl00$ctl00$ctl00$content$menuMain$ctl00" type="button" class=" btn btn-primary" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$menuMain$ctl00&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-envelope "></span> </button>
+			</div>
+		</div>
+	</div>
+</nav>
+    <span id="ctl00_ctl00_ctl00_content_menuMainAssociation"></span>
+    <span id="ctl00_ctl00_ctl00_content_menuMainMWECC"></span>
+
+    <div class="container mainMenuContainer">
+        
+    <div class="MainBarPosition">
+        <div id="ctl00_ctl00_ctl00_content_content_ttlMain" class="s-header-layout" color="Blue">
+	Incident Track<sup>®</sup> &gt; Manage &gt; Incidents
+</div>
+    </div>
+    <nav role="navigation" id="ctl00_ctl00_ctl00_content_content_ITMenu" class="SucceedMenu navbar navbar-default appMenu">
+	<div class="">
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class=" dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Manage <b class="caret"></b></a><ul class="menu-font dropdown-menu">
+					<li class=""><a href="https://lossfreerx.com/IT/Incidents.aspx" class="">Incidents</a></li><li class=""><a href="https://lossfreerx.com/IT/Submissions.aspx" class="">Claim Submissions</a></li>
+				</ul></li><li class=""><a href="https://lossfreerx.com/IT/Trending.aspx" class="">Trending</a></li><li class=" dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Reports <b class="caret"></b></a><ul class="menu-font dropdown-menu">
+					<li class=""><a href="https://lossfreerx.com/IT/Reports/OSHA.aspx" class="">OSHA Reports</a></li><li class=""><a href="https://lossfreerx.com/IT/Reports/ClaimForms.aspx" class="">Claim Forms</a></li><li class=""><a href="https://lossfreerx.com/IT/Reports/LagReport.aspx" class="">Lag Report</a></li><li class=""><a href="https://lossfreerx.com/IT/Reports/ClaimNotes.aspx" class="">Claim Notes</a></li><li class=""><a href="https://lossfreerx.com/IT/Reports/DataExport.aspx" class="">Export Data</a></li><li class=""><a href="https://lossfreerx.com/IT/Reports/CorrectiveActions.aspx" class="">Corrective Actions</a></li>
+				</ul></li><li class=" dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Settings <b class="caret"></b></a><ul class="menu-font dropdown-menu">
+					<li class=""><a href="https://lossfreerx.com/Setup/Notify.aspx" class="">Email Distribution</a></li><li class=""><a href="https://lossfreerx.com/Setup/Import.aspx?page=0" class="">Import Data</a></li><li class=""><a href="https://lossfreerx.com/IT/Setup.aspx" class="">Manage Lists</a></li><li class=""><a href="https://lossfreerx.com/Setup/RootCause.aspx" class="">Root Causes</a></li>
+				</ul></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+    <span id="ctl00_ctl00_ctl00_content_content_LiteMenu"></span>
+    
+    <div id="ctl00_ctl00_ctl00_content_content_content_tbrMain" class="SearchBar row">
+    	<div class="col-sm-4">
+    		<div class="input-group">
+    			<input name="ctl00$ctl00$ctl00$content$content$content$tbrMain$Textbox" type="text" id="ctl00_ctl00_ctl00_content_content_content_tbrMain_Textbox" class="form-control"><span onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$tbrMain$Button&#39;,&#39;&#39;)" type="button" id="ctl00_ctl00_ctl00_content_content_content_tbrMain_Button" class="input-group-addon glyphicon glyphicon-search" style="cursor:pointer;display:inline-block;height:34px;"></span>
+    		</div><span id="ctl00_ctl00_ctl00_content_content_content_tbrMain_ClearButton"></span>
+    	</div>
+        <div class="col-sm-1" style="padding-top:8px;">
+		<span id="ctl00_ctl00_ctl00_content_content_content_tbrMain_Link" style="margin-left:-23px;"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$tbrMain$Link&#39;,&#39;&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">Advanced</a></span>
+    	</div>
+        <div class="col-sm-7 text-right">
+    		<div id="ctl00_ctl00_ctl00_content_content_content_tbrMain_Toolbar" class="btn-group">
+    			<button type="button" class="btn button primary">New</button><button type="button" class="btn btn-default">Download</button><button type="button" class="btn btn-default">Archive</button><button onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$tbrMain$Toolbar&#39;,&#39;5&#39;)" type="button" class="btn btn-default" title="Export to an Excel spreadsheet">Export</button>
+    		</div>
+    	</div>
+</div>
+    <span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_Start"></span><div>
+	<table class="s-gridview table table-striped table-bordered table-hover" cellspacing="0" border="0" id="ctl00_ctl00_ctl00_content_content_content_gvIncidents" style="border-collapse:collapse;">
+		<thead>
+			<tr>
+				<th class="GVSelectHeader text-center" scope="col" style="width:32px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl01_chkAll_Start"></span><span class="SCheckBox" title="Click here to check or uncheck all" style="cursor:pointer;"><input id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl01_chkAll" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl01$chkAll" onclick="SCheckBoxGVAdv.ToggleCheckAll(this,&#39;ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList&#39;)" class="ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectListAll"></span><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl01_chkAll_End"></span></th><th class="Sortable" scope="col" style="width:110px;"><table cellpadding="0" cellspacing="0" style="font-weight:bold;height:32px;cursor:pointer;" align="NotSet">
+					<tbody><tr>
+						<td onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$OshaId&#39;)">Incident ID</td>
+					</tr>
+				</tbody></table>
+				</th><th class="Sortable" align="left" scope="col" style="width:130px;"><table cellpadding="0" cellspacing="0" style="font-weight:bold;height:32px;cursor:pointer;" align="Left">
+					<tbody><tr>
+						<td onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Injured&#39;)">Claimant</td>
+					</tr>
+				</tbody></table>
+				</th><th class="Sortable" align="left" scope="col" style="width:340px;"><table cellpadding="0" cellspacing="0" style="font-weight:bold;height:32px;cursor:pointer;" align="Left">
+					<tbody><tr>
+						<td onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Name&#39;)">Incident</td>
+					</tr>
+				</tbody></table>
+				</th><th class="Sortable" align="left" scope="col" style="width:145px;"><table cellpadding="0" cellspacing="0" style="font-weight:bold;height:32px;cursor:pointer;" align="Left">
+					<tbody><tr>
+						<td onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Category&#39;)">Category</td>
+					</tr>
+				</tbody></table>
+				</th><th class="Sorting" scope="col" style="width:90px;"><table cellpadding="0" cellspacing="0" style="font-weight:bold;height:32px;cursor:pointer;" align="Center">
+					<tbody><tr>
+						<td onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Occurred&#39;)" rowspan="2">Occurred</td>
+						<td valign="bottom" onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Occurred&#39;)"></td>
+					</tr>
+					<tr>
+						<td valign="top" onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Occurred&#39;)"></td>
+					</tr>
+				</tbody></table>
+				</th><th class="Sortable" scope="col" style="width:65px;"><table cellpadding="0" cellspacing="0" style="font-weight:bold;height:32px;cursor:pointer;" align="NotSet">
+					<tbody>
+                        <tr>
+    						<td>Status</td>
+    					</tr>
+    				</tbody>
+                </table>
+				</th><th class="Sortable" align="center" scope="col"><table cellpadding="0" cellspacing="0" style="font-weight:bold;height:32px;cursor:pointer;" align="Left">
+					<tbody><tr>
+						<td onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Type&#39;)">Type</td>
+					</tr>
+				</tbody></table>
+				</th>
+			</tr>
+		</thead><tbody>
+			<tr class="MultipleSelectRow">
+				<td class="text-center" style="width:32px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl02_chkSelector_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl02_chkSelector" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl02$chkSelector" class="ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList" onclick="SCheckBoxGVAdv.OnCheck(&#39;ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList&#39;)"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl02_chkSelector_End"></span></td><td class="stringcol text-left" style="width:110px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl02_ctl00" title="2016072" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl02$ctl00&#39;,&#39;381004&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">2016072</a></span></td><td title="Eric Test, Eric Test" class="stringcol" align="left" style="width:130px;">Eric Test, Eric Test</td><td title="9990" class="stringcol" align="left" style="width:240px;">9990</td><td title="Work-Related Injury" class="stringcol" align="left" style="width:145px;">Work-Related Injury</td><td align="center" style="width:90px;">11/30/2016</td><td class="stringcol text-left" style="width:65px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl02_ctl02" title="Open" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl02$ctl02&#39;,&#39;381004&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">Open</a></span></td><td align="left" style="width:114px;">
+                    <a id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl02_btnType" href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl02$btnType&#39;,&#39;&#39;)">Claim (California)</a>
+                </td>
+			</tr><tr class="MultipleSelectRow">
+				<td class="text-center" style="width:32px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl03_chkSelector_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl03_chkSelector" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl03$chkSelector" class="ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList" onclick="SCheckBoxGVAdv.OnCheck(&#39;ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList&#39;)"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl03_chkSelector_End"></span></td><td class="stringcol text-left" style="width:110px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl03_ctl00" title="R2016066" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl03$ctl00&#39;,&#39;357059&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">R2016066</a></span></td><td title="Andersen, Gary" class="stringcol" align="left" style="width:130px;">Andersen, Gary</td><td title="EE became dizzy and hit head" class="stringcol" align="left" style="width:240px;">EE became dizzy and hit head</td><td title="Work-Related Injury" class="stringcol" align="left" style="width:145px;">Work-Related Injury</td><td align="center" style="width:90px;">09/07/2016</td><td class="stringcol text-left" style="width:65px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl03_ctl02" title="Open" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl03$ctl02&#39;,&#39;357059&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">Open</a></span></td><td align="left" style="width:114px;">
+                    <a id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl03_btnType" href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl03$btnType&#39;,&#39;&#39;)">Claim (Oregon)</a>
+                </td>
+			</tr><tr class="MultipleSelectRow">
+				<td class="text-center" style="width:32px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl04_chkSelector_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl04_chkSelector" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl04$chkSelector" class="ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList" onclick="SCheckBoxGVAdv.OnCheck(&#39;ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList&#39;)"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl04_chkSelector_End"></span></td><td class="stringcol text-left" style="width:110px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl04_ctl00" title="R2016039" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl04$ctl00&#39;,&#39;229592&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">R2016039</a></span></td><td title="Allred, Archived SAlly" class="stringcol" align="left" style="width:130px;">Allred, Archived SAlly</td><td title="Sally cut hand on machinery" class="stringcol" align="left" style="width:240px;">Sally cut hand on machinery</td><td title="Work-Related Injury" class="stringcol" align="left" style="width:145px;">Work-Related Injury</td><td align="center" style="width:90px;">06/30/2016</td><td class="stringcol text-left" style="width:65px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl04_ctl02" title="Open" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl04$ctl02&#39;,&#39;229592&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">Open</a></span></td><td align="left" style="width:114px;">
+                    <a id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl04_btnType" href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl04$btnType&#39;,&#39;&#39;)">Claim (California)</a>
+                </td>
+			</tr><tr class="MultipleSelectRow">
+				<td class="text-center" style="width:32px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl05_chkSelector_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl05_chkSelector" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl05$chkSelector" class="ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList" onclick="SCheckBoxGVAdv.OnCheck(&#39;ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList&#39;)"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl05_chkSelector_End"></span></td><td class="stringcol text-left" style="width:110px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl05_ctl00" title="R2016035" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl05$ctl00&#39;,&#39;228095&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">R2016035</a></span></td><td title="Anderson, Charles" class="stringcol" align="left" style="width:130px;">Anderson, Charles</td><td title="Charles Anderson suffered heat illness" class="stringcol" align="left" style="width:240px;">Charles Anderson suffered heat illness</td><td title="Work-Related Injury" class="stringcol" align="left" style="width:145px;">Work-Related Injury</td><td align="center" style="width:90px;">06/21/2016</td><td class="stringcol text-left" style="width:65px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl05_ctl02" title="Open" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl05$ctl02&#39;,&#39;228095&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">Open</a></span></td><td align="left" style="width:114px;">
+                    <a id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl05_btnType" href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl05$btnType&#39;,&#39;&#39;)">Claim (Oregon)</a>
+                </td>
+			</tr><tr class="MultipleSelectRow">
+				<td class="text-center" style="width:32px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl06_chkSelector_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl06_chkSelector" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl06$chkSelector" class="ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList" onclick="SCheckBoxGVAdv.OnCheck(&#39;ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList&#39;)"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl06_chkSelector_End"></span></td><td class="stringcol text-left" style="width:110px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl06_ctl00" title="2016036" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl06$ctl00&#39;,&#39;228325&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">2016036</a></span></td><td title="Amundson, Mark" class="stringcol" align="left" style="width:130px;">Amundson, Mark</td><td title="Mark fell off a ladder, from the height of 5 feet" class="stringcol" align="left" style="width:240px;">Mark fell off a ladder, from the height of 5 feet</td><td title="Work-Related Injury" class="stringcol" align="left" style="width:145px;">Work-Related Injury</td><td align="center" style="width:90px;">06/15/2016</td><td class="stringcol text-left" style="width:65px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl06_ctl02" title="Open" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl06$ctl02&#39;,&#39;228325&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">Open</a></span></td><td align="left" style="width:114px;">
+                    <a id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl06_btnType" href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl06$btnType&#39;,&#39;&#39;)">Claim (Unspecified)</a>
+                </td>
+			</tr><tr class="MultipleSelectRow">
+				<td class="text-center" style="width:32px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl07_chkSelector_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl07_chkSelector" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl07$chkSelector" class="ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList" onclick="SCheckBoxGVAdv.OnCheck(&#39;ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList&#39;)"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl07_chkSelector_End"></span></td><td class="stringcol text-left" style="width:110px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl07_ctl00" title="2016034" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl07$ctl00&#39;,&#39;227741&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">2016034</a></span></td><td title="Duncan, Timothy" class="stringcol" align="left" style="width:130px;">Duncan, Timothy</td><td title="Tim backed up into a pole, giving himself whiplash" class="stringcol" align="left" style="width:240px;">Tim backed up into a pole, giving himself whiplash</td><td title="Fleet" class="stringcol" align="left" style="width:145px;">Fleet</td><td align="center" style="width:90px;">06/14/2016</td><td class="stringcol text-left" style="width:65px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl07_ctl02" title="Open" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl07$ctl02&#39;,&#39;227741&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">Open</a></span></td><td align="left" style="width:114px;">
+                    <a id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl07_btnType" href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl07$btnType&#39;,&#39;&#39;)">Claim</a>
+                </td>
+			</tr><tr class="MultipleSelectRow">
+				<td class="text-center" style="width:32px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl08_chkSelector_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl08_chkSelector" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl08$chkSelector" class="ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList" onclick="SCheckBoxGVAdv.OnCheck(&#39;ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList&#39;)"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl08_chkSelector_End"></span></td><td class="stringcol text-left" style="width:110px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl08_ctl00" title="2016038" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl08$ctl00&#39;,&#39;228330&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">2016038</a></span></td><td title="Beck, James" class="stringcol" align="left" style="width:130px;">Beck, James</td><td title="James fell off the scaffold when washing windows" class="stringcol" align="left" style="width:240px;">James fell off the scaffold when washing windows</td><td title="Work-Related Injury" class="stringcol" align="left" style="width:145px;">Work-Related Injury</td><td align="center" style="width:90px;">06/08/2016</td><td class="stringcol text-left" style="width:65px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl08_ctl02" title="Open" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl08$ctl02&#39;,&#39;228330&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">Open</a></span></td><td align="left" style="width:114px;">
+                    <a id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl08_btnType" href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl08$btnType&#39;,&#39;&#39;)">Claim (Oregon)</a>
+                </td>
+			</tr><tr class="MultipleSelectRow">
+				<td class="text-center" style="width:32px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl09_chkSelector_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl09_chkSelector" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl09$chkSelector" class="ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList" onclick="SCheckBoxGVAdv.OnCheck(&#39;ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList&#39;)"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl09_chkSelector_End"></span></td><td class="stringcol text-left" style="width:110px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl09_ctl00" title="R2016030" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl09$ctl00&#39;,&#39;224255&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">R2016030</a></span></td><td title="Butler, Michele" class="stringcol" align="left" style="width:130px;">Butler, Michele</td><td title="Michelle slipped on a wet floor and injured elbow" class="stringcol" align="left" style="width:240px;">Michelle slipped on a wet floor and injured elbow</td><td title="Work-Related Injury" class="stringcol" align="left" style="width:145px;">Work-Related Injury</td><td align="center" style="width:90px;">05/12/2016</td><td class="stringcol text-left" style="width:65px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl09_ctl02" title="Open" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl09$ctl02&#39;,&#39;224255&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">Open</a></span></td><td align="left" style="width:114px;">
+                    <a id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl09_btnType" href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl09$btnType&#39;,&#39;&#39;)">Claim (Arizona)</a>
+                </td>
+			</tr><tr class="MultipleSelectRow">
+				<td class="text-center" style="width:32px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl10_chkSelector_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl10_chkSelector" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl10$chkSelector" class="ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList" onclick="SCheckBoxGVAdv.OnCheck(&#39;ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList&#39;)"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl10_chkSelector_End"></span></td><td class="stringcol text-left" style="width:110px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl10_ctl00" title="2016029" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl10$ctl00&#39;,&#39;223331&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">2016029</a></span></td><td title="Bart, Julie" class="stringcol" align="left" style="width:130px;">Bart, Julie</td><td title="Julie rear-ended another car" class="stringcol" align="left" style="width:240px;">Julie rear-ended another car</td><td title="Fleet" class="stringcol" align="left" style="width:145px;">Fleet</td><td align="center" style="width:90px;">05/02/2016</td><td class="stringcol text-left" style="width:65px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl10_ctl02" title="Open" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl10$ctl02&#39;,&#39;223331&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">Open</a></span></td><td align="left" style="width:114px;">
+                    <a id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl10_btnType" href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl10$btnType&#39;,&#39;&#39;)">Claim</a>
+                </td>
+			</tr><tr class="MultipleSelectRow">
+				<td class="text-center" style="width:32px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl11_chkSelector_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl11_chkSelector" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl11$chkSelector" class="ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList" onclick="SCheckBoxGVAdv.OnCheck(&#39;ctl00_ctl00_ctl00_content_content_content_gvIncidentsSelectList&#39;)"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl11_chkSelector_End"></span></td><td class="stringcol text-left" style="width:110px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl11_ctl00" title="R2016021" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl11$ctl00&#39;,&#39;216310&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">R2016021</a></span></td><td title="Crowe, Adam" class="stringcol" align="left" style="width:130px;">Crowe, Adam</td><td title="Adam suffered hearing loss after repeatedly not wearing the correct PPE" class="stringcol" align="left" style="width:240px;">Adam suffered hearing loss after repeatedly not wearing the correct PPE</td><td title="Work-Related Illness" class="stringcol" align="left" style="width:145px;">Work-Related Illness</td><td align="center" style="width:90px;">03/22/2016</td><td class="stringcol text-left" style="width:65px;"><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl11_ctl02" title="Open" class="CMDBTN"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl11$ctl02&#39;,&#39;216310&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">Open</a></span></td><td align="left" style="width:114px;">
+                    <a id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl11_btnType" href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl11$btnType&#39;,&#39;&#39;)">Claim (California)</a>
+                </td>
+			</tr>
+		</tbody><tfoot>
+			<tr>
+				<td colspan="8"><div class="row s-grid-footer-row">
+					<div class="col-xs-5">
+						<div class="s-grid-pager">
+							<div class="previous">
+								<a disabled="disabled">&lt;</a>
+							</div><div class="next">
+								<a href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Page$2&#39;)">&gt;</a>
+							</div>
+						</div><div class="s-grid-page-selector" style="width:200px;">
+							<span>Page:&nbsp;</span><input name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl13$txtPageNumber" type="text" value="1" id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl13_txtPageNumber" class="pager-text" data-grid-target="ctl00$ctl00$ctl00$content$content$content$gvIncidents"><button id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl13_btnPageGo" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl13$btnPageGo" type="button" class="pager-button btn btn-default" onclick="" data-grid-target="ctl00$ctl00$ctl00$content$content$content$gvIncidents">Go</button><span class="control-label">&nbsp;/ 389</span>
+						</div>
+					</div><div class="col-xs-3">
+						<div class="s-grid-size-selector">
+							<span>Show&nbsp;</span><select name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl13$ctl13" class="pager-size" data-grid-target="ctl00$ctl00$ctl00$content$content$content$gvIncidents">
+								<option selected="selected" value="10">10</option>
+								<option value="25">25</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+
+							</select><span>&nbsp;Rows</span>
+						</div>
+					</div><div class="col-xs-4 text-right">
+						<div class="btn-group">
+							<button id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl13_ctl17" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl13$ctl17" type="button" class="active btn btn-default" onclick="" style="cursor:default;">Active</button><button id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl13_ctl18" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl13$ctl18" type="button" class=" btn btn-default" onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;sgvontogglearchive&#39;)">Archived</button>
+						</div>
+					</div>
+				</div></td>
+			</tr>
+		</tfoot>
+	</table>
+</div><span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_End"></span>
+    <div class="AdvancedSearchGroupBox GroupBoxContainer" id="ctl00_ctl00_ctl00_content_content_content_gbAdvancedSearch" style="display:none;width:900px;">
+	<div class="GroupBoxOverlay" style="z-index:1000;">
+
+	</div><div class="GroupBoxBox" style="margin-left:-450px;width:900px;z-index:1002;">
+		<div class="GroupBoxHeader bg-info" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+			Search for incidents
+		</div><div class="GroupBoxData">
+			
+        <span id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_Start"></span><div id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_pnlSearch">
+				
+    <div id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_ctlDateRange" showwithinlabel="True" label="Include Incident" betweenrangeonsameline="True" class="row">
+					<div class="col-xs-4 ">
+						<div id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_ctlDateRange_lpRange" class="has-warning form-group">
+							<label class="control-label" id="lpRange">*Range:</label><select name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$ctlDateRange$range" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlSearch$ctlDateRange$range\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_ctlDateRange_range" class="form-control">
+								<option selected="selected" value="All">All</option>
+								<option value="Within">Within</option>
+								<option value="Before">Before</option>
+								<option value="After">After</option>
+								<option value="Between">Between</option>
+								<option value="Last">Last</option>
+								<option value="Since">Since</option>
+
+							</select>
+						</div>
+					</div>
+				</div>
+    <div id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_lblTypes" class="has-warning form-group">
+					<label class="control-label" id="lblTypes">*And a category of:</label>
+        <span id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_Start"></span><table id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType" class="SCheckBoxList SCheckAll cblFormatting IsRequired form-control" border="0" style="width:100%;display: inline-table !important">
+						<tbody><tr>
+							<td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_0" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selType$0" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_0">All Types</label></td><td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_4" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selType$4" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_4">Auto/Fleet</label></td>
+						</tr><tr>
+							<td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_1" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selType$1" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_1">Work-Related Illness</label></td><td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_5" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selType$5" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_5">General Liability</label></td>
+						</tr><tr>
+							<td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_2" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selType$2" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_2">Work-Related Injury</label></td><td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_6" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selType$6" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_6">Property</label></td>
+						</tr><tr>
+							<td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_3" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selType$3" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_3">Environmental</label></td><td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_7" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selType$7" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_7">Professional Liability</label></td>
+						</tr>
+					</tbody></table><span id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selType_End"></span>
+    
+				</div>
+    <div id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_lblOccurred" class="has-warning form-group">
+					<label class="control-label" id="lblOccurred">*And occurred at:</label>
+        <span id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_Start"></span><table id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality" class="SCheckBoxList SCheckAll cblFormatting IsRequired form-control" border="0" style="width:100%;display: inline-table !important">
+						<tbody><tr>
+							<td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_0" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$0" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_0">All Sites</label></td><td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_9" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$9" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_9">Demo Oregon-New Site</label></td>
+						</tr><tr>
+							<td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_1" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$1" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_1">Demo Indiana</label></td><td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_10" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$10" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_10">Demo Oregon-November 14th KS Test Site</label></td>
+						</tr><tr>
+							<td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_2" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$2" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_2">Demo Kansas</label></td><td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_11" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$11" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_11">Demo Oregon-QA Site</label></td>
+						</tr><tr>
+							<td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_3" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$3" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_3">Demo Oklahoma</label></td><td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_12" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$12" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_12">Demo Oregon-sample 1234</label></td>
+						</tr><tr>
+							<td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_4" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$4" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_4">Demo Oregon</label></td><td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_13" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$13" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_13">Demo Oregon-Seattle</label></td>
+						</tr><tr>
+							<td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_5" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$5" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_5">Demo Oregon-43234</label></td><td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_14" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$14" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_14">Demo Oregon-Site test</label></td>
+						</tr><tr>
+							<td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_6" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$6" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_6">Demo Oregon-archived site</label></td><td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_15" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$15" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_15">Demo Oregon-Test Site</label></td>
+						</tr><tr>
+							<td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_7" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$7" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_7">Demo Oregon-Demo California</label></td><td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_16" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$16" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_16">Rise Services Inc   Mesa Inverness Office   4554 E. Inverness Avenue Mesa AZ 85206</label></td>
+						</tr><tr>
+							<td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_8" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$8" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_8">Demo Oregon-Demo New Jersey</label></td><td><input id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_17" type="checkbox" name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selFacality$17" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_17">Your Company Name</label></td>
+						</tr>
+					</tbody></table><span id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selFacality_End"></span>
+    
+				</div>
+    <div id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_lblStatus" class="form-group">
+					<label class="control-label" id="lblStatus">And a status of:</label>
+        <select name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selStatus" id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selStatus" class="form-control">
+						<option selected="selected" value="X">Both Open and Closed</option>
+						<option value="O">Open</option>
+						<option value="C">Closed</option>
+
+					</select>
+    
+				</div>
+    <div id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_lblLitigation" class="form-group">
+					<label class="control-label" id="lblLitigation">Litigation Status of:</label>
+        <select name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$selLitigation" id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_selLitigation" class="form-control">
+						<option selected="selected" value="B">Both litigated and non-litigated</option>
+						<option value="L">Litigated</option>
+						<option value="N">Non-litigated</option>
+
+					</select>
+    
+				</div>
+    <div id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_lblLocation" class="form-group">
+					<label class="control-label" id="lblLocation">Location:</label>
+        <select name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$ddlLocation" id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_ddlLocation" class="form-control">
+						<option selected="selected" value="-2147483648">Any Location</option>
+						<option value="25615">Aug 18 Location</option>
+						<option value="14873">Fabrication Shop</option>
+						<option value="24967">July 27 Location</option>
+						<option value="17947">Main Parking Lot</option>
+						<option value="8200">Parking lot</option>
+						<option value="16165">River Road</option>
+						<option value="20765">Stairwell</option>
+
+					</select>
+    
+				</div>
+    <div class="panel SucceedHeader SucceedHeaderNormal">
+					<h3>
+						<span class="label">Claimant Involved</span>
+					</h3>
+				</div>
+    <div id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_ctl01" class="form-group">
+					<label class="control-label" id="ctl01">First Name:</label>
+        <input name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$txtFirstName" type="text" maxlength="25" id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_txtFirstName" class="form-control" style="width:100%;">
+    
+				</div>
+    <div id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_ctl02" class="form-group">
+					<label class="control-label" id="ctl02">Last Name:</label>
+        <input name="ctl00$ctl00$ctl00$content$content$content$ctlSearch$txtLastName" type="text" maxlength="25" id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_txtLastName" class="form-control" style="width:100%;">
+    
+				</div>
+    <div>
+        (Leave both first name and last name blank to see all employees)
+    </div>
+    <span id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_lblSubject"></span>
+
+			</div><span id="ctl00_ctl00_ctl00_content_content_content_ctlSearch_End"></span>
+        <div class="ButtonSpacing">
+				<button id="ctl00_ctl00_ctl00_content_content_content_btnSearch_PrimaryButton" name="ctl00$ctl00$ctl00$content$content$content$btnSearch$PrimaryButton" type="button" class="AdvancedSearchClick btn btn-success" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$btnSearch$PrimaryButton&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-search "></span> Search</button><button id="ctl00_ctl00_ctl00_content_content_content_btnSearch_SecondaryButton" name="ctl00$ctl00$ctl00$content$content$content$btnSearch$SecondaryButton" type="button" class="btnEscape btn btn-danger" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$btnSearch$SecondaryButton&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-remove "></span> Cancel</button>
+			</div>
+    
+		</div>
+	</div>
+</div>
+    <span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_Start"></span><div class="GroupBoxContainer" id="ctl00_ctl00_ctl00_content_content_content_ctlNew_gbSelectType" style="display:none;width:650px;">
+	<div class="GroupBoxOverlay" style="z-index:1000;">
+
+	</div><div class="GroupBoxBox" style="margin-left:-325px;width:650px;z-index:1002;">
+		<div class="GroupBoxHeader bg-info" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+			New Incident
+		</div><div class="GroupBoxData">
+			
+    <div id="ctl00_ctl00_ctl00_content_content_content_ctlNew_pnlSelectType">
+				
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctlNew_lblType" class="has-warning form-group">
+					<label class="control-label" id="lblType">*Incident Type:</label>
+            <select name="ctl00$ctl00$ctl00$content$content$content$ctlNew$ddlType" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlNew$ddlType\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ddlType" class="form-control">
+						<option selected="selected" value="-2147483648">-- Select Type of Incident --</option>
+						<option value="Injury">Work-Related Injury</option>
+						<option value="Illness">Work-Related Illness</option>
+						<option value="Auto">Auto/Fleet</option>
+						<option value="GL">General Liability</option>
+						<option value="Property">Property</option>
+						<option value="Environmental">Environmental</option>
+
+					</select>
+        
+				</div>
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctlNew_SafetyPause" class="has-warning form-group">
+					<label class="control-label" id="SafetyPause">*Do you want to flag this incident as a "Safety Pause"?</label>
+                <span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynSafetyPause" title="A safety pause is a highly important notice to halt work related activities due to any unsafe condition or unsafe act to prevent an accident or loss, until the problem is corrected." class="SRadioButtonList SYesNo form-control" style="padding:2px;"><span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynSafetyPause_rbYes_Start"></span><span title="A safety pause is a highly important notice to halt work related activities due to any unsafe condition or unsafe act to prevent an accident or loss, until the problem is corrected."><input id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynSafetyPause_rbYes" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlNew$ynSafetyPause$ctl00_ctl00_ctl00_content_content_content_ctlNew_ynSafetyPause" value="rbYes" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlNew$ynSafetyPause$rbYes\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynSafetyPause_rbYes">Yes</label></span><span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynSafetyPause_rbYes_End"></span>&nbsp;&nbsp;<span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynSafetyPause_rbNo_Start"></span><span title="A safety pause is a highly important notice to halt work related activities due to any unsafe condition or unsafe act to prevent an accident or loss, until the problem is corrected."><input id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynSafetyPause_rbNo" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlNew$ynSafetyPause$ctl00_ctl00_ctl00_content_content_content_ctlNew_ynSafetyPause" value="rbNo" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynSafetyPause_rbNo">No</label></span><span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynSafetyPause_rbNo_End"></span></span>    
+        
+				</div>
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctlNew_NearMiss" class="has-warning form-group">
+					<label class="control-label" id="NearMiss">*Was the incident a "Near Miss"?</label>
+            <span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynNearMiss" title="A near miss is an unwanted and unplanned event that could have, but did not result in an injury, illness, or damage." class="SRadioButtonList SYesNo form-control" style="padding:2px;"><span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynNearMiss_rbYes_Start"></span><span title="A near miss is an unwanted and unplanned event that could have, but did not result in an injury, illness, or damage."><input id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynNearMiss_rbYes" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlNew$ynNearMiss$ctl00_ctl00_ctl00_content_content_content_ctlNew_ynNearMiss" value="rbYes" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlNew$ynNearMiss$rbYes\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynNearMiss_rbYes">Yes</label></span><span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynNearMiss_rbYes_End"></span>&nbsp;&nbsp;<span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynNearMiss_rbNo_Start"></span><span title="A near miss is an unwanted and unplanned event that could have, but did not result in an injury, illness, or damage."><input id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynNearMiss_rbNo" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlNew$ynNearMiss$ctl00_ctl00_ctl00_content_content_content_ctlNew_ynNearMiss" value="rbNo" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlNew$ynNearMiss$rbNo\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynNearMiss_rbNo">No</label></span><span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynNearMiss_rbNo_End"></span></span> 
+        
+				</div>
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctlNew_Recordable" class="has-warning form-group">
+					<label class="control-label" id="Recordable">*Was the incident an "OSHA Recordable"?</label>
+            (<a href="http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=9638&amp;p_table=STANDARDS" target="_blank">How to tell</a>) 
+            <span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynRecordable" class="SRadioButtonList SYesNo form-control" style="padding:2px;"><span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynRecordable_rbYes_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynRecordable_rbYes" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlNew$ynRecordable$ctl00_ctl00_ctl00_content_content_content_ctlNew_ynRecordable" value="rbYes" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlNew$ynRecordable$rbYes\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynRecordable_rbYes">Yes</label><span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynRecordable_rbYes_End"></span>&nbsp;&nbsp;<span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynRecordable_rbNo_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynRecordable_rbNo" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlNew$ynRecordable$ctl00_ctl00_ctl00_content_content_content_ctlNew_ynRecordable" value="rbNo" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlNew$ynRecordable$rbNo\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynRecordable_rbNo">No</label><span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynRecordable_rbNo_End"></span></span>   
+        
+				</div>
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctlNew_Claim" class="form-group">
+					<label class="control-label" id="Claim">Was the incident an insurance claim?</label> 
+            <span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_zenithDisclaimer"></span>      
+            <span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynClaim" title="A claim is a formal request to an insurance company or an appointed claims management group seeking coverage for a loss in accordance with the terms of the insurance policy." class="SRadioButtonList SYesNo form-control" style="padding:2px;"><span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynClaim_rbYes_Start"></span><span title="A claim is a formal request to an insurance company or an appointed claims management group seeking coverage for a loss in accordance with the terms of the insurance policy."><input id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynClaim_rbYes" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlNew$ynClaim$ctl00_ctl00_ctl00_content_content_content_ctlNew_ynClaim" value="rbYes" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlNew$ynClaim$rbYes\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynClaim_rbYes">Yes</label></span><span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynClaim_rbYes_End"></span>&nbsp;&nbsp;<span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynClaim_rbNo_Start"></span><span title="A claim is a formal request to an insurance company or an appointed claims management group seeking coverage for a loss in accordance with the terms of the insurance policy."><input id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynClaim_rbNo" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlNew$ynClaim$ctl00_ctl00_ctl00_content_content_content_ctlNew_ynClaim" value="rbNo" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlNew$ynClaim$rbNo\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynClaim_rbNo">No</label></span><span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ynClaim_rbNo_End"></span></span>    
+        
+				</div>
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctlNew_State" class="has-warning form-group">
+					<label class="control-label" id="State">*Which State/Jurisdiction did the claim occur in?</label>
+            <select name="ctl00$ctl00$ctl00$content$content$content$ctlNew$ddlClaimState" id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ddlClaimState" title="Select which state&#39;s first report of injury you wish to print" class="form-control">
+						<option selected="selected" value="-2147483648">-- Select the state --</option>
+						<option value="XX">-- Not Specified --</option>
+						<option value="LS">LS-202</option>
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+
+					</select>
+        
+				</div>
+    
+			</div>
+    <div id="ctl00_ctl00_ctl00_content_content_content_ctlNew_scSelect_Container" class="ButtonSpacing">
+				<button id="ctl00_ctl00_ctl00_content_content_content_ctlNew_scSelect" name="ctl00$ctl00$ctl00$content$content$content$ctlNew$scSelect" type="button" class=" btn btn-success" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$ctlNew$scSelect&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-ok "></span> Continue</button><button id="ctl00_ctl00_ctl00_content_content_content_ctlNew_ctl00" name="ctl00$ctl00$ctl00$content$content$content$ctlNew$ctl00" type="button" class="btnEscape btn btn-danger" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$ctlNew$ctl00&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-remove "></span> Cancel</button>
+			</div>
+
+		</div>
+	</div>
+</div><span id="ctl00_ctl00_ctl00_content_content_content_ctlNew_End"></span>
+    <span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_Start"></span><div class="GroupBoxContainer" id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_gbSelectType" style="display:none;width:650px;">
+	<div class="GroupBoxOverlay" style="z-index:1000;">
+
+	</div><div class="GroupBoxBox" style="margin-left:-325px;width:650px;z-index:1002;">
+		<div class="GroupBoxHeader bg-info" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+			Update Incident
+		</div><div class="GroupBoxData">
+			
+    <div id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_pnlSelectType">
+				
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_lblType" class="has-warning form-group">
+					<label class="control-label" id="lblType">*Incident Type:</label>
+            <select name="ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ddlType" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ddlType\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ddlType" class="form-control">
+						<option selected="selected" value="-2147483648">-- Select Type of Incident --</option>
+						<option value="Injury">Work-Related Injury</option>
+						<option value="Illness">Work-Related Illness</option>
+						<option value="Auto">Auto/Fleet</option>
+						<option value="GL">General Liability</option>
+						<option value="Property">Property</option>
+						<option value="Environmental">Environmental</option>
+
+					</select>
+        
+				</div>
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_SafetyPause" class="has-warning form-group">
+					<label class="control-label" id="SafetyPause">*Do you want to flag this incident as a "Safety Pause"?</label>
+                <span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynSafetyPause" title="A safety pause is a highly important notice to halt work related activities due to any unsafe condition or unsafe act to prevent an accident or loss, until the problem is corrected." class="SRadioButtonList SYesNo form-control" style="padding:2px;"><span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynSafetyPause_rbYes_Start"></span><span title="A safety pause is a highly important notice to halt work related activities due to any unsafe condition or unsafe act to prevent an accident or loss, until the problem is corrected."><input id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynSafetyPause_rbYes" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynSafetyPause$ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynSafetyPause" value="rbYes" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynSafetyPause$rbYes\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynSafetyPause_rbYes">Yes</label></span><span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynSafetyPause_rbYes_End"></span>&nbsp;&nbsp;<span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynSafetyPause_rbNo_Start"></span><span title="A safety pause is a highly important notice to halt work related activities due to any unsafe condition or unsafe act to prevent an accident or loss, until the problem is corrected."><input id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynSafetyPause_rbNo" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynSafetyPause$ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynSafetyPause" value="rbNo" checked="checked"><label for="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynSafetyPause_rbNo">No</label></span><span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynSafetyPause_rbNo_End"></span></span>    
+        
+				</div>
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_NearMiss" class="has-warning form-group">
+					<label class="control-label" id="NearMiss">*Was the incident a "Near Miss"?</label>
+            <span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynNearMiss" title="A near miss is an unwanted and unplanned event that could have, but did not result in an injury, illness, or damage." class="SRadioButtonList SYesNo form-control" style="padding:2px;"><span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynNearMiss_rbYes_Start"></span><span title="A near miss is an unwanted and unplanned event that could have, but did not result in an injury, illness, or damage."><input id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynNearMiss_rbYes" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynNearMiss$ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynNearMiss" value="rbYes" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynNearMiss$rbYes\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynNearMiss_rbYes">Yes</label></span><span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynNearMiss_rbYes_End"></span>&nbsp;&nbsp;<span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynNearMiss_rbNo_Start"></span><span title="A near miss is an unwanted and unplanned event that could have, but did not result in an injury, illness, or damage."><input id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynNearMiss_rbNo" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynNearMiss$ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynNearMiss" value="rbNo" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynNearMiss$rbNo\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynNearMiss_rbNo">No</label></span><span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynNearMiss_rbNo_End"></span></span> 
+        
+				</div>
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_Recordable" class="has-warning form-group">
+					<label class="control-label" id="Recordable">*Was the incident an "OSHA Recordable"?</label>
+            (<a href="http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=9638&amp;p_table=STANDARDS" target="_blank">How to tell</a>) 
+            <span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynRecordable" class="SRadioButtonList SYesNo form-control" style="padding:2px;"><span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynRecordable_rbYes_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynRecordable_rbYes" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynRecordable$ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynRecordable" value="rbYes" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynRecordable$rbYes\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynRecordable_rbYes">Yes</label><span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynRecordable_rbYes_End"></span>&nbsp;&nbsp;<span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynRecordable_rbNo_Start"></span><input id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynRecordable_rbNo" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynRecordable$ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynRecordable" value="rbNo" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynRecordable$rbNo\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynRecordable_rbNo">No</label><span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynRecordable_rbNo_End"></span></span>   
+        
+				</div>
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_Claim" class="form-group">
+					<label class="control-label" id="Claim">Was the incident an insurance claim?</label> 
+            <span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_zenithDisclaimer"></span>      
+            <span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynClaim" title="A claim is a formal request to an insurance company or an appointed claims management group seeking coverage for a loss in accordance with the terms of the insurance policy." class="SRadioButtonList SYesNo form-control" style="padding:2px;"><span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynClaim_rbYes_Start"></span><span title="A claim is a formal request to an insurance company or an appointed claims management group seeking coverage for a loss in accordance with the terms of the insurance policy."><input id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynClaim_rbYes" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynClaim$ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynClaim" value="rbYes" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynClaim$rbYes\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynClaim_rbYes">Yes</label></span><span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynClaim_rbYes_End"></span>&nbsp;&nbsp;<span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynClaim_rbNo_Start"></span><span title="A claim is a formal request to an insurance company or an appointed claims management group seeking coverage for a loss in accordance with the terms of the insurance policy."><input id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynClaim_rbNo" type="radio" name="ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynClaim$ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynClaim" value="rbNo" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ynClaim$rbNo\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynClaim_rbNo">No</label></span><span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ynClaim_rbNo_End"></span></span>    
+        
+				</div>
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_State" class="has-warning form-group">
+					<label class="control-label" id="State">*Which State/Jurisdiction did the claim occur in?</label>
+            <select name="ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ddlClaimState" id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ddlClaimState" title="Select which state&#39;s first report of injury you wish to print" class="form-control">
+						<option selected="selected" value="-2147483648">-- Select the state --</option>
+						<option value="XX">-- Not Specified --</option>
+						<option value="LS">LS-202</option>
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+
+					</select>
+        
+				</div>
+    
+			</div>
+    <div id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_scSelect_Container" class="ButtonSpacing">
+				<button id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_scSelect" name="ctl00$ctl00$ctl00$content$content$content$ctlUpdate$scSelect" type="button" class=" btn btn-success" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$ctlUpdate$scSelect&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-ok "></span> Continue</button><button id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_ctl00" name="ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ctl00" type="button" class="btnEscape btn btn-danger" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$ctlUpdate$ctl00&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-remove "></span> Cancel</button>
+			</div>
+
+		</div>
+	</div>
+</div><span id="ctl00_ctl00_ctl00_content_content_content_ctlUpdate_End"></span>
+    <div class="GroupBoxContainer" id="ctl00_ctl00_ctl00_content_content_content_gbExportList" style="display:none;width:300px;">
+	<div class="GroupBoxOverlay" style="z-index:1000;">
+
+	</div><div class="GroupBoxBox" style="margin-left:-150px;width:300px;z-index:1002;">
+		<div class="GroupBoxHeader bg-info" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+			Export List
+		</div><div class="GroupBoxData">
+			
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctl00" class="form-group">
+				<label class="control-label" id="ctl00">Export List as:</label>
+            <select size="1" class="form-control" onclick="g_format = $(this).val()">
+                <option value="report" selected="selected">PDF</option>
+                <option value="export">Excel</option>
+            </select>
+        
+			</div>
+        <div id="ctl00_ctl00_ctl00_content_content_content_pnlSites">
+				
+            
+            <input type="checkbox" name="ckExportSite" id="ckExportSite" onclick="g_sites = $(this).is(&#39;:checked&#39;) ? &#39;0&#39; : &#39;1&#39;">
+            Include
+            Sites
+        
+			</div>
+        <div class="ButtonSpacing">
+				<button id="ctl00_ctl00_ctl00_content_content_content_btnExportList_PrimaryButton" name="ctl00$ctl00$ctl00$content$content$content$btnExportList$PrimaryButton" type="button" class=" btn btn-success" onclick="ExportList()"><span class="glyphicon glyphicon-ok "></span> Export</button><button id="ctl00_ctl00_ctl00_content_content_content_btnExportList_SecondaryButton" name="ctl00$ctl00$ctl00$content$content$content$btnExportList$SecondaryButton" type="button" class=" btn btn-danger" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$btnExportList$SecondaryButton&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-remove "></span> Cancel</button>
+			</div>
+        <input type="hidden" name="ctl00$ctl00$ctl00$content$content$content$hfType" id="ctl00_ctl00_ctl00_content_content_content_hfType">
+        <input type="hidden" name="ctl00$ctl00$ctl00$content$content$content$hfGLExport" id="ctl00_ctl00_ctl00_content_content_content_hfGLExport">
+    
+		</div>
+	</div>
+</div>
+    <div class="GroupBoxContainer" id="ctl00_ctl00_ctl00_content_content_content_gbIncidentStatus" style="display:none;width:500px;">
+	<div class="GroupBoxOverlay" style="z-index:1000;">
+
+	</div><div class="GroupBoxBox" style="margin-left:-250px;width:500px;z-index:1002;">
+		<div class="GroupBoxHeader bg-info" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+			Close incident
+		</div><div class="GroupBoxData">
+			
+        <div id="ctl00_ctl00_ctl00_content_content_content_ctl01" class="form-group">
+				<label class="control-label" id="ctl01">Incident number:</label>
+            
+        
+			</div>
+        <div id="ctl00_ctl00_ctl00_content_content_content_lpConfirm" class="form-group">
+
+			</div>
+        <div class="ButtonSpacing">
+				<button id="ctl00_ctl00_ctl00_content_content_content_psIncidentStatus_PrimaryButton" name="ctl00$ctl00$ctl00$content$content$content$psIncidentStatus$PrimaryButton" type="button" class=" btn btn-success" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$psIncidentStatus$PrimaryButton&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-ok "></span> Yes</button><button id="ctl00_ctl00_ctl00_content_content_content_psIncidentStatus_SecondaryButton" name="ctl00$ctl00$ctl00$content$content$content$psIncidentStatus$SecondaryButton" type="button" class=" btn btn-danger" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$psIncidentStatus$SecondaryButton&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-remove "></span> No</button>
+			</div>
+    
+		</div>
+	</div>
+</div>
+
+
+        
+                <span id="ctl00_ctl00_ctl00_content_pnlEula"></span>
+
+    </div>
+    <div class="GroupBoxContainer" id="ctl00_ctl00_ctl00_content_siteSelector" style="display:none;width:400px;">
+	<div class="GroupBoxOverlay" style="z-index:1000;">
+
+	</div><div class="GroupBoxBox" style="margin-left:-200px;width:400px;z-index:1002;">
+		<div class="GroupBoxHeader bg-info" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+			Change Site
+		</div><div class="GroupBoxData">
+			
+        <div id="ctl00_ctl00_ctl00_content_lpSite" class="has-warning form-group">
+				<label class="control-label" id="lpSite">*Select Site:</label>
+            <select name="ctl00$ctl00$ctl00$content$ddlChangeSite" id="ctl00_ctl00_ctl00_content_ddlChangeSite" class="form-control">
+					<option selected="selected" value="58318">Demo Indiana</option>
+					<option value="103978">Demo Oklahoma</option>
+					<option value="190">Demo Oregon</option>
+					<option value="147513">Demo Oregon-43234</option>
+					<option value="57851">Demo Oregon-Demo California</option>
+					<option value="134949">Demo Oregon-QA Site</option>
+					<option value="154058">Demo Oregon-sample 1234</option>
+					<option value="152012">Demo Oregon-Seattle</option>
+					<option value="155103">Demo Oregon-Site test</option>
+					<option value="143441">Rise Services Inc   Mesa Inverness Office   4554 E. Inverness Avenue Mesa AZ 85206</option>
+					<option value="143360">Your Company Name</option>
+
+				</select>
+        
+			</div>
+        <div class="ButtonSpacing">
+				<button id="ctl00_ctl00_ctl00_content_ctl00_PrimaryButton" name="ctl00$ctl00$ctl00$content$ctl00$PrimaryButton" type="button" class=" btn btn-success" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$ctl00$PrimaryButton&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-ok "></span> Select</button><button id="ctl00_ctl00_ctl00_content_ctl00_SecondaryButton" name="ctl00$ctl00$ctl00$content$ctl00$SecondaryButton" type="button" class=" btn btn-danger" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$ctl00$SecondaryButton&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-remove "></span> Cancel</button>
+			</div>
+    
+		</div>
+	</div>
+</div>
+    <div class="GroupBoxContainer" id="ctl00_ctl00_ctl00_content_industrySelector" style="display:none;width:500px;">
+	<div class="GroupBoxOverlay" style="z-index:1000;">
+
+	</div><div class="GroupBoxBox" style="margin-left:-250px;width:500px;z-index:1002;">
+		<div class="GroupBoxHeader bg-info" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+			Change Industry
+		</div><div class="GroupBoxData">
+			
+        <div id="ctl00_ctl00_ctl00_content_ctl01" class="has-warning form-group">
+				<label class="control-label" id="ctl01">*Industry:</label>
+            <select name="ctl00$ctl00$ctl00$content$ddlIndustry" id="ctl00_ctl00_ctl00_content_ddlIndustry" class="form-control">
+					<option selected="selected" value="-2147483648">-- Select industry --</option>
+
+				</select>
+        
+			</div>
+        <div class="ButtonSpacing">
+				<button id="ctl00_ctl00_ctl00_content_ctl02_PrimaryButton" name="ctl00$ctl00$ctl00$content$ctl02$PrimaryButton" type="button" class=" btn btn-success" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$ctl02$PrimaryButton&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-ok "></span> Select</button><button id="ctl00_ctl00_ctl00_content_ctl02_SecondaryButton" name="ctl00$ctl00$ctl00$content$ctl02$SecondaryButton" type="button" class=" btn btn-danger" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$ctl02$SecondaryButton&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-remove "></span> Cancel</button>
+			</div>
+    
+		</div>
+	</div>
+</div>
+    <div class="GroupBoxContainer" id="ctl00_ctl00_ctl00_content_boxDownloadiOs" style="display:none;width:500px;">
+	<div class="GroupBoxOverlay" style="z-index:20000000;">
+
+	</div><div class="GroupBoxBox" style="margin-left:-250px;width:500px;z-index:20000002;">
+		<div class="GroupBoxHeader bg-info" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+			View File
+		</div><div class="GroupBoxData">
+			<div id="ctl00_ctl00_ctl00_content_iOsDownload" style="font:10pt &#39;Open Sans&#39;;margin-bottom:10px;">
+				<b>Click the "View File" button to download the file to your device.</b>
+			</div><div class="ButtonSpacing">
+				<button id="ctl00_ctl00_ctl00_content_btnOk" name="ctl00$ctl00$ctl00$content$btnOk" type="button" class=" btn btn-success" onclick="window.open(&#39;/downloadios.aspx&#39;); $(&#39;#ctl00_ctl00_ctl00_content_boxDownloadiOs&#39;).hide()"><span class="glyphicon glyphicon-cloud-download "></span> View File</button><button id="ctl00_ctl00_ctl00_content_btnCancel" name="ctl00$ctl00$ctl00$content$btnCancel" type="button" class=" btn btn-danger" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$btnCancel&#39;,&#39;&#39;)"><span class="glyphicon glyphicon-remove "></span> Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+    
+<script type="text/javascript">
+//<![CDATA[
+var zumiPage_WaitClientScriptControl =  new Array("ctl00_ctl00_ctl00_content_content_content_gvIncidents", "ctl00_ctl00_ctl00_content_content_content_tbrMain_Button", "ctl00_ctl00_ctl00_content_content_content_tbrMain_Toolbar");
+var zumiPage_WaitClientScriptStart =  new Array("Wait.Show();", "Wait.Show();", "Wait.Show();");
+var zumiPage_WaitClientScriptEnd =  new Array("Wait.Hide();", "Wait.Hide();", "Wait.Hide();");
+var zumiPage_Members =  new Array(17940000, -1, 0, true);
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() { 
+GroupBox.SetDialogPage('btnEscape');;
+ } );
+$(document).ready(function() { 
+GroupBox.SetDialogPage('btnEscape');;
+ } );
+$(document).ready(function() { 
+GroupBox.SetDialogPage('btnEscape');;
+ } );
+$(document).ready(function() { 
+GroupBox.SetDialogPage('btnEscape');;
+ } );
+$(document).ready(function() { 
+GroupBox.SetDialogPage('btnEscape');;
+ } );
+$(document).ready(function() { 
+GroupBox.SetDialogPage('btnEscape');;
+ } );
+$(document).ready(function() { 
+GroupBox.SetDialogPage('btnEscape');;
+ } );
+$(document).ready(function() { 
+GroupBox.SetDialogPage('btnEscape');;
+ } );
+$(document).ready(function() { 
+GridHack.ClearPostValue();
+ } );
+$(document).ready(function() { 
+Misc.DisableEnterKey();;
+ } );
+$(document).ready(function() { 
+Misc.SetEnterButton('ctl00_ctl00_ctl00_content_content_content_tbrMain_Textbox','ctl00_ctl00_ctl00_content_content_content_tbrMain_Button');
+ } );
+$(window).load(function(){ 
+GridPaging.Initialize();;
+ } );
+__initZumiPage('aspnetForm');//]]>
+</script>
+</form>
+    <div class="s-upload-box" id="ctl00_ctl00_ctl00_boxUploading">
+	<div class="uploadDiv">
+
+	</div><div class="uploadDiv">
+		<div class="text">
+
+		</div><div class="progress">
+			<div class="progress-bar progress-bar-striped active" style="width:0%;">
+
+			</div>
+		</div><div id="ProgressBarCancel" class="cancel">
+			<button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+		</div><div id="ProgressBarClose">
+			<button type="button" class="btn btn-success" onclick="$(&#39;.s-upload-box&#39;).hide();"><span class="glyphicon glyphicon-ok"></span> Done</button>
+		</div>
+	</div>
+</div>
+    <div class="wait">
+	<div class="overlay">
+
+	</div><div class="body">
+		Processing ... Please wait<br><img src="./Incident Track _ Manage _ Incidents_files/img(1).axd">
+	</div>
+</div>
+    <iframe class="SDownloader" style="display:none" src="./Incident Track _ Manage _ Incidents_files/saved_resource.html"></iframe>
+    
+    <form id="charge_form" method="post" action="https://lossfreerx.com/" style="display: none;">
+        <span class="payment-errors"></span>
+        <div class="form-row">
+            <label>
+                <input id="StripeFormName" type="text" data-stripe="name">
+                <input id="StripeFormNumber" type="text" size="20" data-stripe="number">
+            </label>
+        </div>
+        <div class="form-row">
+            <label>
+                <input id="StripeFormCVC" type="text" size="4" data-stripe="cvc">
+            </label>
+        </div>
+        <div class="form-row">
+            <label>
+                <input id="StripeFormExpMonth" type="text" size="2" data-stripe="exp-month">
+            </label>
+            <input id="StripeFormExpYear" type="text" size="4" data-stripe="exp-year">
+        </div>
+        <button id="stripeSubmitButton" class="submit_button" type="submit" name="submit-button">Submit</button>
+    </form>
+
+
+<iframe name="stripeXDM_default235131_provider" id="stripeXDM_default235131_provider" src="./Incident Track _ Manage _ Incidents_files/channel.html" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe><div id="window-resizer-tooltip" style="display: none;"><a href="https://lossfreerx.com/IT/Incidents.aspx#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1920</span> x <span class="tooltipHeight" id="winHeight">1417</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1920</span> x <span class="tooltipHeight" id="vpHeight">892</span></div><script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script></body></html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments -->
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths k-webkit k-webkit55"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Additional Evaluators</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="HRdrive/f2693df2cf"></script>
+    <script src="HRdrive/nr-1016.min.js"></script>
+    <script async="" src="HRdrive/analytics.js"></script>
+
+    
+
+    <link href="HRdrive/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+    <link href="HRdrive/select2.min.css" type="text/css" rel="stylesheet">
+    <link href="HRdrive/style.min.css" type="text/css" rel="stylesheet">
+    
+    <link href="HRdrive/font-awesome.min.css" rel="stylesheet">
+    <link href="HRdrive/fullcalendar.min.css" rel="stylesheet">
+
+
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+    
+    <link href="HRdrive/kendo.common-bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="HRdrive/kendo.common-bootstrap.core.min.css" type="text/css" rel="stylesheet">
+    <link href="HRdrive/kendo.bootstrap.min.css" type="text/css" rel="stylesheet">
+
+    
+    <link href="HRdrive/powertour.2.1.4.css" rel="stylesheet">
+    <link href="HRdrive/powertour-style-clean.css" rel="stylesheet">
+    <link href="HRdrive/animate.min.css" rel="stylesheet">
+
+    <link href="HRdrive/master.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="HRdrive/jquery.fancybox.css" type="text/css" media="screen">
+
+    
+    
+    <link rel="stylesheet" href="HRdrive/PerformanceEvaluatorAssignments.css" type="text/css">
+
+
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://kpahrm.com/Content/_ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://kpahrm.com/Content/_ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://kpahrm.com/Content/_ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="https://kpahrm.com/Content/_ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" type="image/png" href="https://kpahrm.com/Content/_ico/favicon.png">
+
+    
+    
+    <script src="HRdrive/jquery.min.js"></script>
+    <script src="HRdrive/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="HRdrive/jquery-migrate.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        (function ($) {
+            var xhrPool = [];
+            $(document).ajaxSend(function (e, jqXHR, options) {
+
+                xhrPool.push(jqXHR);
+            });
+            $(document).ajaxComplete(function (e, jqXHR, options) {
+
+                xhrPool = $.grep(xhrPool, function (x) { return x != jqXHR });
+            });
+            abort = function () {
+                $.each(xhrPool, function (idx, jqXHR) {
+
+                    jqXHR.abort();
+                });
+            };
+
+            var oldbeforeunload = window.onbeforeunload;
+            window.onbeforeunload = function () {
+                var r = oldbeforeunload ? oldbeforeunload() : undefined;
+                if (r == undefined) {
+                    // only cancel requests if there is no prompt to stay on the page
+                    // if there is a prompt, it will likely give the requests enough time to finish
+                    abort();
+                }
+                return r;
+            }
+            window.unload = function () {
+                var r = oldbeforeunload ? oldbeforeunload() : undefined;
+                if (r == undefined) {
+                    // only cancel requests if there is no prompt to stay on the page
+                    // if there is a prompt, it will likely give the requests enough time to finish
+                    abort();
+                }
+                return r;
+            }
+        })(jQuery);
+    </script>
+    <script src="HRdrive/tablesorter"></script>
+
+    <script src="HRdrive/modernizr.min.js"></script>
+
+    <script src="HRdrive/bootstrap"></script>
+
+    <script src="HRdrive/inputmask"></script>
+
+    <script src="HRdrive/bootbox.min.js"></script>
+    <script src="HRdrive/select2.min.js"></script>
+    <script src="HRdrive/Site.js"></script>
+
+    
+    <script src="HRdrive/moment.min.js"></script>
+
+    <script src="HRdrive/fullcalendar.min.js"></script>
+
+
+    
+    <script type="text/javascript" src="HRdrive/jquery.fancybox.pack.js"></script>
+
+    
+    <script src="HRdrive/kendo"></script>
+
+
+    
+    <script src="HRdrive/powertour.2.1.4.js"></script>
+
+    
+    <script src="HRdrive/tinymce.min.js"></script>
+    <script src="HRdrive/jquery.tinymce.min.js"></script>
+
+    
+    <script src="HRdrive/jqueryval"></script>
+
+    <script src="HRdrive/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+
+    <script src="HRdrive/Namespace.js" type="text/javascript"></script>
+    <script src="HRdrive/DOMObserver.min.js" type="text/javascript"></script>
+    <script src="HRdrive/scripts.js"></script>
+    <script src="HRdrive/utility.js" type="text/javascript"></script>
+    <script src="HRdrive/AjaxHandler.js"></script>
+    <script src="HRdrive/raphael-2.1.4.min.js"></script>
+    <script src="HRdrive/justgage.js"></script>
+    
+    <script type="text/javascript">
+        $.validator.setDefaults({
+            ignore: ":not(select):hidden, :hidden select"
+        });
+    </script>
+
+    
+    <script src="HRdrive/Search.js"></script>
+    
+    <script type="text/javascript" src="HRdrive/EmployeeAssignments.js"></script>
+	<script type="text/javascript" src="HRdrive/PerformanceEvaluatorAssignments.js"></script>
+    <script type="text/javascript" src="HRdrive/kendo.all.min.js"></script>
+    <script type="text/javascript" src="HRdrive/jszip.min.js"></script>
+
+
+<script type="text/javascript" async="" src="HRdrive/ed7e1bd2-ee66-4007-8603-6b5e3fd4eb3a.js"></script><style type="text/css">.fancybox-margin{margin-right:0px;}</style>
+
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i" rel="stylesheet">
+<link href="css/KPAstyles.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body cz-shortcut-listen="true">
+
+    
+    <input name="__RequestVerificationToken" type="hidden" value="Cfg4ipH08MZPYTJL3---VwDZObcuRr7JR6jCEVClZMIBtij3zKNIGMBQ91Ux6EXQtb96oWKUWJqOlFe-NtmhixBSb25qeiPERtxqAs_VzhWzP5jTgvOiNcDLxzqN8h4850OJ4Q2">
+    <header class="navbar navbar-inverse navbar-fixed-top hrm-navbar">
+
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-header">
+                <a href="https://kpahrm.com/" class="navbar-brand hrm-navbar-brand">
+                    <img src="img/logo.svg">
+                </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar-collapse" class="collapse navbar-collapse navbar-right">
+                <div>
+                    <ul class="nav navbar-nav navbar-right hrm-navbar-user">
+                        <li>
+                            <a href="https://kpahrm.com/Person/Index/10644551">Welcome, Trent Peterson</a>
+                        </li>
+                            <li>
+                                <a href="https://kpahrm.com/Account/Logout">Sign Out</a>
+                            </li>
+                                            </ul>
+                </div>
+                <div class="hrm-clear">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://kpahrm.com/">Dashboard</a></li>
+<li><a href="https://kpahrm.com/LeaveCalendar">Leave Calendar</a></li>                                                    <li role="presentation">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" role="button" aria-expanded="false">People <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <a href="https://kpahrm.com/People">Employees</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://kpahrm.com/Hiring">Applicants</a>
+                                        </li>
+                                </ul>
+                            </li>
+                        <li><a href="https://kpahrm.com/IncidentReporting">Incident Reporting</a></li>                        <li><a href="https://kpahrm.com/CISAndRedFlags/FormsAndDocuments">CIS &amp; Red Flags</a></li>                        <li><a href="https://kpahrm.com/Toolkit">Toolkit</a></li>
+<li><a href="https://kpahrm.com/Reports/AdhocReport">Reports</a></li>                        <li><a href="https://kpahrm.com/HRAdvice">HR Advice</a></li>                        <li><a href="https://kpahrm.com/Support">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="breadcrumb hrm-breadcrumb hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    
+
+        <a href="https://kpahrm.com/" title="Dashboard">Dashboard</a>
+         &gt; 
+
+        <a href="https://kpahrm.com/Toolkit" title="Toolkit">Toolkit</a>
+         &gt; 
+
+    Additional Evaluators
+
+                </div>
+                <div class="hrm-breadcrumb-search col-md-3">
+                    <div class="input-group">
+                        <label for="breadcrumb-search-box" class="input-group-addon">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </label>
+                        <input id="breadcrumb-search-box" type="text" class="form-control" placeholder="Search people">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <div class="container" role="main">
+       
+        <div class="panel panel-default">
+            <div class="panel-body">
+                
+    
+<style>
+    #grid .k-loading-image {
+        background-image: none;
+    }
+</style>
+
+
+
+<h2 title="Evaluators are defined as  individuals who can conduct performance evaluations, disciple and terminate employees when a direct reporting relationship does not exist.   Using the “Multiple Evaluator” tool will allow you to assign additional evaluators to specific employees and define which function they may accomplish for those employees.  The evaluator must have the appropriate permission to be able to accomplish the desired function.  Permission access is found in the “Employee System Access” tool.">Additional Evaluators</h2>
+
+
+    <div class="well">
+        <div class="row">
+<input data-val="true" data-val-number="The field SelectedCompanyId must be a number." id="SelectedCompanyId" name="SelectedCompanyId" type="hidden" value="15866">                <div class="col-md-4">
+                    <label title="Evaluators are defined as  individuals who can conduct performance evaluations, disciple and terminate employees when a direct reporting relationship does not exist.   Using the “Multiple Evaluator” tool will allow you to assign additional evaluators to specific employees and define which function they may accomplish for those employees.  The evaluator must have the appropriate permission to be able to accomplish the desired function.  Permission access is found in the “Employee System Access” tool.">
+                        Evaluator:
+                    </label>
+                    <div class="select2-container form-control" id="s2id_SelectedPersonId"><a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-1">Select Evaluator</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen1" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1" id="s2id_autogen1"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen1_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-1" id="s2id_autogen1_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-1">   </ul></div></div><select class="form-control" data-val="true" data-val-number="The field SelectedPersonId must be a number." id="SelectedPersonId" name="SelectedPersonId" data-placeholder="Select Evaluator" tabindex="-1" title="" style="display: none;"><option value=""></option>
+</select>
+                </div>
+            </div>
+    </div>
+
+
+<div id="grid" data-role="grid" class="k-grid k-widget k-editable"><div class="k-header k-grid-toolbar"><a class="k-button k-button-icontext k-grid-save-changes button primary" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#">Save changes</a><a class="k-button k-button-icontext k-grid-cancel-changes" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#">Cancel changes</a></div><div class="k-grid-header" style="padding-right: 0px;"><div class="k-grid-header-wrap k-auto-scrollable"><table role="grid" tabindex="-1"><colgroup><col style="width:100px"><col style="width:100px"><col style="width:150px"><col style="width:150px"><col style="width:150px"><col style="width:100px"><col style="width:50px"><col style="width:50px"><col style="width:50px"></colgroup><thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader" data-field="PersonID" rowspan="1" data-index="0" id="f6846932-bf94-4683-8c8a-52f74b8e1e53" style="display:none" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1"><span class="k-icon k-i-filter">Filter</span></a><a class="k-link" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1">PersonID</a></th><th scope="col" role="columnheader" data-field="EvaluatorId" rowspan="1" data-index="1" id="e5968678-9daf-46fa-ac5c-a0fd6e85fc89" style="display:none" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1"><span class="k-icon k-i-filter">Filter</span></a><a class="k-link" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1">EvaluatorId</a></th><th scope="col" role="columnheader" data-field="NameL" rowspan="1" data-title="Last Name" data-index="2" id="7268df0a-e397-4eb5-99dd-72cf3e08e247" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1"><span class="k-icon k-i-filter">Filter</span></a><a class="k-link" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1">Last Name</a></th><th scope="col" role="columnheader" data-field="NameF" rowspan="1" data-title="First Name" data-index="3" id="dbc8bc36-169f-4c81-b005-812e6433c1c6" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1"><span class="k-icon k-i-filter">Filter</span></a><a class="k-link" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1">First Name</a></th><th scope="col" role="columnheader" data-field="Positions" rowspan="1" data-title="Position" data-index="4" id="d5aa3191-221c-407e-9a7a-80b163b03a4a" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1"><span class="k-icon k-i-filter">Filter</span></a><a class="k-link" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1">Position</a></th><th scope="col" role="columnheader" data-field="Departments" rowspan="1" data-title="Department" data-index="5" id="cb78463d-a2bb-4ef8-8808-991f1f40ec37" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1"><span class="k-icon k-i-filter">Filter</span></a><a class="k-link" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1">Department</a></th><th scope="col" role="columnheader" data-field="Managers" rowspan="1" data-title="Reports To" data-index="6" id="9ab42d51-c46c-44a5-b4eb-b9c7ce262892" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1"><span class="k-icon k-i-filter">Filter</span></a><a class="k-link" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1">Reports To</a></th><th scope="col" role="columnheader" data-field="CompanyName" rowspan="1" data-title="Company Name" data-index="7" id="03e3c509-61a5-49b0-bbc3-50113195116e" class="k-header k-with-icon k-filterable" data-role="columnsorter"><a class="k-grid-filter" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1"><span class="k-icon k-i-filter">Filter</span></a><a class="k-link" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" tabindex="-1">Company Name</a></th><th scope="col" role="columnheader" rowspan="1" data-title="&lt;input id=&#39;checkAllEvaluators&#39;, type=&#39;checkbox&#39;, class=&#39;check-box&#39; &gt;&lt;/th&gt; Performance Evaluations " data-index="8" id="4dc836ca-782b-48eb-8235-d52eb3d5e30f" class="k-header"><input id="checkAllEvaluators" ,="" type="checkbox" class="check-box"> Performance Evaluations </th><th scope="col" role="columnheader" rowspan="1" data-title="&lt;input id=&#39;checkAllDisciplinaryActions&#39;, type=&#39;checkbox&#39;, class=&#39;check-box&#39; &gt;&lt;/th&gt; Disciplinary Actions " data-index="9" id="7ac8f13b-44ae-46b2-8a66-638991a0f9fc" class="k-header"><input id="checkAllDisciplinaryActions" ,="" type="checkbox" class="check-box"> Disciplinary Actions </th><th scope="col" role="columnheader" rowspan="1" data-title="&lt;input id=&#39;checkAllTerminations&#39;, type=&#39;checkbox&#39;, class=&#39;check-box&#39; &gt;&lt;/th&gt; Terminations " data-index="10" id="645d6834-443a-438b-8548-df0c59ee230f" class="k-header"><input id="checkAllTerminations" ,="" type="checkbox" class="check-box"> Terminations </th></tr></thead></table></div></div><div class="k-grid-content k-auto-scrollable"><table role="grid" tabindex="0"><colgroup><col style="width:100px"><col style="width:100px"><col style="width:150px"><col style="width:150px"><col style="width:150px"><col style="width:100px"><col style="width:50px"><col style="width:50px"><col style="width:50px"></colgroup><tbody role="rowgroup"><tr data-uid="a2b09147-26c7-465e-a9b1-6a64adcab563" role="row"><td style="display:none" role="gridcell">10637768</td><td style="display:none" role="gridcell">0</td><td role="gridcell">AFFATATO</td><td role="gridcell">GERAD</td><td role="gridcell">SALES</td><td role="gridcell">SALES RN</td><td role="gridcell">Not Assigned</td><td role="gridcell">Demo- Kelly Pinkerton</td><td role="gridcell"><input type="checkbox" name="CanEvaluate" title="" data-bind="checked: CanEvaluate" class="CanEvaluate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewEvaluators" data-personid="10637768">Details</a></td><td role="gridcell"><input type="checkbox" name="CanDiscipline" title="" data-bind="checked: CanDiscipline" class="CanDiscipline"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewDisciplinarians" data-personid="10637768">Details </a></td><td role="gridcell"><input type="checkbox" name="CanTerminate" title="" data-bind="checked: CanTerminate" class="CanTerminate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewTerminators" data-personid="10637768">Details </a></td></tr><tr class="k-alt" data-uid="7686d3b8-ac2a-49ac-865c-cb8e2aa6579c" role="row"><td style="display:none" role="gridcell">10637769</td><td style="display:none" role="gridcell">0</td><td role="gridcell">BANDY</td><td role="gridcell">CHARLES</td><td role="gridcell">SALES</td><td role="gridcell">SALES CADILLAC</td><td role="gridcell">CHVISUK, IVAN</td><td role="gridcell">Demo- Kelly Pinkerton</td><td role="gridcell"><input type="checkbox" name="CanEvaluate" title="" data-bind="checked: CanEvaluate" class="CanEvaluate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewEvaluators" data-personid="10637769">Details</a></td><td role="gridcell"><input type="checkbox" name="CanDiscipline" title="" data-bind="checked: CanDiscipline" class="CanDiscipline"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewDisciplinarians" data-personid="10637769">Details </a></td><td role="gridcell"><input type="checkbox" name="CanTerminate" title="" data-bind="checked: CanTerminate" class="CanTerminate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewTerminators" data-personid="10637769">Details </a></td></tr><tr data-uid="45113102-f957-4faf-93ce-03fbf3b001e8" role="row"><td style="display:none" role="gridcell">10637770</td><td style="display:none" role="gridcell">0</td><td role="gridcell">BEAL</td><td role="gridcell">CLARENCE</td><td role="gridcell">SALES</td><td role="gridcell">SALES CADILLAC</td><td role="gridcell">AFFATATO, GERAD</td><td role="gridcell">Demo- Kelly Pinkerton</td><td role="gridcell"><input type="checkbox" name="CanEvaluate" title="" data-bind="checked: CanEvaluate" class="CanEvaluate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewEvaluators" data-personid="10637770">Details</a></td><td role="gridcell"><input type="checkbox" name="CanDiscipline" title="" data-bind="checked: CanDiscipline" class="CanDiscipline"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewDisciplinarians" data-personid="10637770">Details </a></td><td role="gridcell"><input type="checkbox" name="CanTerminate" title="" data-bind="checked: CanTerminate" class="CanTerminate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewTerminators" data-personid="10637770">Details </a></td></tr><tr class="k-alt" data-uid="3500a997-e54d-4564-b791-efade06669f7" role="row"><td style="display:none" role="gridcell">10637771</td><td style="display:none" role="gridcell">0</td><td role="gridcell">BECK</td><td role="gridcell">CARL</td><td role="gridcell">SALES</td><td role="gridcell">SALES RN</td><td role="gridcell">Not Assigned</td><td role="gridcell">Demo- Kelly Pinkerton</td><td role="gridcell"><input type="checkbox" name="CanEvaluate" title="" data-bind="checked: CanEvaluate" class="CanEvaluate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewEvaluators" data-personid="10637771">Details</a></td><td role="gridcell"><input type="checkbox" name="CanDiscipline" title="" data-bind="checked: CanDiscipline" class="CanDiscipline"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewDisciplinarians" data-personid="10637771">Details </a></td><td role="gridcell"><input type="checkbox" name="CanTerminate" title="" data-bind="checked: CanTerminate" class="CanTerminate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewTerminators" data-personid="10637771">Details </a></td></tr><tr data-uid="9a45837b-757c-4f7e-be9f-1d907f3806ce" role="row"><td style="display:none" role="gridcell">10637772</td><td style="display:none" role="gridcell">0</td><td role="gridcell">BLODGETT</td><td role="gridcell">APRIL</td><td role="gridcell">ACCOUNTING CLERK</td><td role="gridcell">ACCOUNTING</td><td role="gridcell">Not Assigned</td><td role="gridcell">Demo- Kelly Pinkerton</td><td role="gridcell"><input type="checkbox" name="CanEvaluate" title="" data-bind="checked: CanEvaluate" class="CanEvaluate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewEvaluators" data-personid="10637772">Details</a></td><td role="gridcell"><input type="checkbox" name="CanDiscipline" title="" data-bind="checked: CanDiscipline" class="CanDiscipline"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewDisciplinarians" data-personid="10637772">Details </a></td><td role="gridcell"><input type="checkbox" name="CanTerminate" title="" data-bind="checked: CanTerminate" class="CanTerminate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewTerminators" data-personid="10637772">Details </a></td></tr><tr class="k-alt" data-uid="be4fb184-4c6d-40e8-9c51-e4b778e36199" role="row"><td style="display:none" role="gridcell">10637773</td><td style="display:none" role="gridcell">0</td><td role="gridcell">BONNEMA</td><td role="gridcell">DONALD</td><td role="gridcell">PARTS</td><td role="gridcell">PARTS CADILLAC</td><td role="gridcell">Pinkerton, Kelly</td><td role="gridcell">Demo- Kelly Pinkerton</td><td role="gridcell"><input type="checkbox" name="CanEvaluate" title="" data-bind="checked: CanEvaluate" class="CanEvaluate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewEvaluators" data-personid="10637773">Details</a></td><td role="gridcell"><input type="checkbox" name="CanDiscipline" title="" data-bind="checked: CanDiscipline" class="CanDiscipline"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewDisciplinarians" data-personid="10637773">Details </a></td><td role="gridcell"><input type="checkbox" name="CanTerminate" title="" data-bind="checked: CanTerminate" class="CanTerminate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewTerminators" data-personid="10637773">Details </a></td></tr><tr data-uid="66b9cd47-f5d7-4cc8-97f1-f2411ee31ecc" role="row"><td style="display:none" role="gridcell">10637774</td><td style="display:none" role="gridcell">0</td><td role="gridcell">CHUBB</td><td role="gridcell">ANDREW</td><td role="gridcell">SALES</td><td role="gridcell">SALES RN</td><td role="gridcell">AFFATATO, GERAD</td><td role="gridcell">Demo- Kelly Pinkerton</td><td role="gridcell"><input type="checkbox" name="CanEvaluate" title="" data-bind="checked: CanEvaluate" class="CanEvaluate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewEvaluators" data-personid="10637774">Details</a></td><td role="gridcell"><input type="checkbox" name="CanDiscipline" title="" data-bind="checked: CanDiscipline" class="CanDiscipline"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewDisciplinarians" data-personid="10637774">Details </a></td><td role="gridcell"><input type="checkbox" name="CanTerminate" title="" data-bind="checked: CanTerminate" class="CanTerminate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewTerminators" data-personid="10637774">Details </a></td></tr><tr class="k-alt" data-uid="1984e1c0-6454-4efb-8b85-4f491d9eb31c" role="row"><td style="display:none" role="gridcell">10637775</td><td style="display:none" role="gridcell">0</td><td role="gridcell">CHVISUK</td><td role="gridcell">IVAN</td><td role="gridcell">SALES</td><td role="gridcell">SALES SUBARU</td><td role="gridcell">Not Assigned</td><td role="gridcell">Demo- Kelly Pinkerton</td><td role="gridcell"><input type="checkbox" name="CanEvaluate" title="" data-bind="checked: CanEvaluate" class="CanEvaluate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewEvaluators" data-personid="10637775">Details</a></td><td role="gridcell"><input type="checkbox" name="CanDiscipline" title="" data-bind="checked: CanDiscipline" class="CanDiscipline"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewDisciplinarians" data-personid="10637775">Details </a></td><td role="gridcell"><input type="checkbox" name="CanTerminate" title="" data-bind="checked: CanTerminate" class="CanTerminate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewTerminators" data-personid="10637775">Details </a></td></tr><tr data-uid="a3cc0fb0-18d2-4b04-863b-08612505afef" role="row"><td style="display:none" role="gridcell">10637776</td><td style="display:none" role="gridcell">0</td><td role="gridcell">CLIFTON</td><td role="gridcell">GLENN</td><td role="gridcell">SALES</td><td role="gridcell">SALES CADILLAC</td><td role="gridcell">Not Assigned</td><td role="gridcell">Demo- Kelly Pinkerton</td><td role="gridcell"><input type="checkbox" name="CanEvaluate" title="" data-bind="checked: CanEvaluate" class="CanEvaluate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewEvaluators" data-personid="10637776">Details</a></td><td role="gridcell"><input type="checkbox" name="CanDiscipline" title="" data-bind="checked: CanDiscipline" class="CanDiscipline"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewDisciplinarians" data-personid="10637776">Details </a></td><td role="gridcell"><input type="checkbox" name="CanTerminate" title="" data-bind="checked: CanTerminate" class="CanTerminate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewTerminators" data-personid="10637776">Details </a></td></tr><tr class="k-alt" data-uid="177c8911-f7a5-4031-8a80-579f7bc5e130" role="row"><td style="display:none" role="gridcell">10637777</td><td style="display:none" role="gridcell">0</td><td role="gridcell">COHEN</td><td role="gridcell">CHARLES</td><td role="gridcell">SALES</td><td role="gridcell">SALES RN</td><td role="gridcell">Not Assigned</td><td role="gridcell">Demo- Kelly Pinkerton</td><td role="gridcell"><input type="checkbox" name="CanEvaluate" title="" data-bind="checked: CanEvaluate" class="CanEvaluate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewEvaluators" data-personid="10637777">Details</a></td><td role="gridcell"><input type="checkbox" name="CanDiscipline" title="" data-bind="checked: CanDiscipline" class="CanDiscipline"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewDisciplinarians" data-personid="10637777">Details </a></td><td role="gridcell"><input type="checkbox" name="CanTerminate" title="" data-bind="checked: CanTerminate" class="CanTerminate"> <a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" style="margin-left:2px;font-size: 12px;font-weight: bold;" class="ViewTerminators" data-personid="10637777">Details </a></td></tr></tbody></table></div><div class="k-pager-wrap k-grid-pager k-widget k-floatwrap" data-role="pager"><a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" aria-label="Go to the first page" class="k-link k-pager-nav k-pager-first k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-seek-w"></span></a><a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" aria-label="Go to the previous page" class="k-link k-pager-nav  k-state-disabled" data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-w"></span></a><ul class="k-pager-numbers k-reset"><li class="k-current-page"><span class="k-link k-pager-nav">1</span></li><li><span class="k-state-selected">1</span></li><li><a tabindex="-1" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" class="k-link" data-page="2">2</a></li><li><a tabindex="-1" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" class="k-link" data-page="3">3</a></li><li><a tabindex="-1" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" class="k-link" data-page="4">4</a></li><li><a tabindex="-1" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" class="k-link" data-page="5">5</a></li><li><a tabindex="-1" href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" class="k-link" data-page="6" title="More pages">...</a></li></ul><a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" aria-label="Go to the next page" class="k-link k-pager-nav" data-page="2" tabindex="-1"><span class="k-icon k-i-arrow-e"></span></a><a href="https://kpahrm.com/Toolkit/PerformanceManagement/PerformanceEvaluatorAssignments#" aria-label="Go to the last page" class="k-link k-pager-nav k-pager-last" data-page="6" tabindex="-1"><span class="k-icon k-i-seek-e"></span></a><span class="k-pager-sizes k-label"><span title="" class="k-widget k-dropdown k-header" unselectable="on" role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="" aria-disabled="false" aria-busy="false" style="" aria-activedescendant="fc1974ea-b911-4b22-92df-00cea1697c05"><span unselectable="on" class="k-dropdown-wrap k-state-default"><span unselectable="on" class="k-input">10</span><span unselectable="on" class="k-select" aria-label="select"><span class="k-icon k-i-arrow-s"></span></span></span><div class="select2-container" id="s2id_autogen2" style="display: none;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-3">10</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen3" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-3" id="s2id_autogen3"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen3_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-3" id="s2id_autogen3_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-3">   </ul></div></div><select data-role="dropdownlist" style="display: none;" tabindex="-1" title=""><option value="all">All</option><option value="5">5</option><option value="10">10</option><option value="20" selected="selected">20</option></select></span>items per page</span><span class="k-pager-info k-label">1 - 10 of 58 items</span></div></div>
+
+
+
+            </div>
+        </div>
+    </div>
+        <footer class="container text-muted small">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        <strong>Disclaimer:</strong> All information published online by HRDrive is subject
+                        to change without notice. HRDrive is not responsible for errors or damages of any kind
+                        resulting from access to its Internet resources.
+                    </p>
+                </div>
+                <div class="col-md-4 text-right">
+                    <p>
+                        Contact HRDrive: <a href="tel:8665394718">(866) 539-4718</a> |
+                        <a href="mailto:support@hrdrive.com">support@hrdrive.com</a><br>
+                        © 2017 HRDrive. All rights reserved.
+                    </p>
+                    <p>
+                        Version: 2.17.6169.23239, 11/21/2016 12:54:38
+                    </p>
+                </div>
+            </div>
+        </footer>
+    <div class="hrm-ajax-error alert alert-danger alert-dismissable hide fade">
+        <button type="button" class="close">×</button>
+        <h4>An Error Occurred behind the Scenes</h4>
+        <p>
+            We're sorry. Something went wrong in the system that it was not prepared to handle.
+            Unfortunately, this means the action you were trying to take likely did not complete
+            successfully. The problem has been reported to the development team so that it can
+            be corrected in the future.
+        </p>
+    </div>
+
+    <script type="text/javascript">
+        var _mfq = _mfq || [];
+        (function() {
+           var mf = document.createElement("script");
+           mf.type = "text/javascript"; mf.async = true;
+           mf.src = "//cdn.mouseflow.com/projects/ed7e1bd2-ee66-4007-8603-6b5e3fd4eb3a.js";
+           document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+    </script>
+
+
+
+	<style>body.tablesorter-disableSelection { -ms-user-select: none; -moz-user-select: -moz-none;-khtml-user-select: none; -webkit-user-select: none; user-select: none; }.tablesorter-resizable-container { position: relative; height: 1px; }.tablesorter-resizable-handle { position: absolute; display: inline-block; width: 8px;top: 1px; cursor: ew-resize; z-index: 3; user-select: none; -moz-user-select: none; }</style>
+	<span role="status" aria-live="polite" class="select2-hidden-accessible"></span>
+	<div class="k-animation-container" style="width: 63px; height: 114px; margin-left: -10px; padding-left: 10px; padding-right: 10px; padding-bottom: 15px; display: none; box-sizing: content-box; overflow: hidden; position: absolute; top: 1312.81px; z-index: 10002; left: 671.234px;">
+		<div class="k-list-container k-popup k-group k-reset" data-role="popup" style="position: absolute; font-size: 14px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-stretch: normal; font-style: normal; font-weight: normal; line-height: normal; width: 57px; min-width: 57px; height: auto; display: none; transform: translateY(113px);">
+			<div class="k-group-header" style="display:none">
+			</div>
+			<div class="k-list-scroller" unselectable="on" style="height: auto;">
+				<ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" aria-live="off" data-role="staticlist" role="listbox">
+					<li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="0">All</li>
+					<li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="1">5</li>
+					<li tabindex="-1" role="option" unselectable="on" class="k-item k-state-focused k-state-selected" data-offset-index="2" id="fc1974ea-b911-4b22-92df-00cea1697c05" aria-selected="true">10</li>
+					<li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="3">20</li>
+				</ul>
+			</div>
+			<div class="k-nodata" style="display:none">
+				<div>No data found.</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
