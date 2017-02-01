@@ -1,0 +1,1 @@
+var TimeoutHelper=function(){function r(){}function u(){window.location=i}function f(n,f){t=n;i=f;setInterval(function(){Kpa.AdminWeb.Services.AuthenticationService.ValidateSession(r,u)},t)}var n={},t,i;return n.Initialize=function(n,t){f(n,t)},n.TimeoutValue=t,n}(jQuery)

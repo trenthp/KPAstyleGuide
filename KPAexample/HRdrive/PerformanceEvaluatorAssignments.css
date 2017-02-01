@@ -1,0 +1,41 @@
+﻿.hrm-table-responsive.master-employee-file-table-height {
+    max-height: 625px;
+    overflow-y: auto;
+}
+
+.master-employee-file-table-cell {
+    /* ReSharper disable once CssBrowserCompatibility */
+    min-width: 140px;
+}
+
+.hrm-text-vertical-offset {
+    margin-top: 6px;
+}
+#grid .k-loading-image {
+    background-image: none;
+}
+.table td.hrm-table-text-vertical-offset {
+    padding-top: 14px;
+}
+
+.masterFileCheckbox {
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
+.k-grid-save-changes {
+    background-image: none;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #3e8f3e;
+}
+
+.k-grid-save-changes:hover {
+    background-image: none;
+    color: #fff;
+    background-color: #419641;
+}
+
+ 
+
+ 
