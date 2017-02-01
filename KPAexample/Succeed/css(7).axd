@@ -1,0 +1,1 @@
+.LFRx_Menu{color:#FFF;background:#1F4694;}.LFRx_StaticItem{color:#FFF;}.LFRx_StaticHover,.LFRx_DynamicHover{color:#FFF;background:#6389C6!important;}.LFRx_DynamicItem{color:#FFF;background:#1F4694;}div.topbar{background-image:url("img.axd?theme=demobuilder");}
