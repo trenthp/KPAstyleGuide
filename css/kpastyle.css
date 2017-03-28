@@ -454,7 +454,7 @@ body {
   margin: 0;
   padding: 0;
   background: #ffffff;
-  font-family: "Gibson", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5em;
   color: #333f48;
@@ -1357,7 +1357,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Gibson", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
   color: inherit;
